@@ -7,4 +7,5 @@ target 'StorePromo' do
 
   # Pods for StorePromo
   pod ‘GoogleMaps’
+  pod 'LMGeocoder', '~> 1.0'
 end

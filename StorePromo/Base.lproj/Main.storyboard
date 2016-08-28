@@ -46,13 +46,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fn-qt-r16">
                                                     <rect key="frame" x="0.0" y="0.0" width="19" height="25"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="магазинов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ap-0e-d2h">
                                                     <rect key="frame" x="29" y="0.0" width="86" height="25"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -124,7 +124,7 @@
                             <constraint firstItem="xEd-YO-88j" firstAttribute="top" secondItem="0WO-Qa-zVn" secondAttribute="bottom" id="gYO-gF-PwV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Акции" id="O0j-Te-WaN"/>
+                    <tabBarItem key="tabBarItem" title="Акции" image="piggy-bank" id="O0j-Te-WaN"/>
                     <connections>
                         <outlet property="webView" destination="xEd-YO-88j" id="p1Z-lH-Qb2"/>
                     </connections>
@@ -146,13 +146,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Карта" id="S4L-RO-c16"/>
+                    <tabBarItem key="tabBarItem" title="Карта" image="internet" id="S4L-RO-c16"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAW-NV-TnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3256" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Настройки-->
         <scene sceneID="5bb-iT-22S">
             <objects>
                 <viewController id="nYC-m4-vOA" sceneMemberID="viewController">
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Ya2-Sv-FYt"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="settings" id="Ya2-Sv-FYt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDR-kl-4jB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,7 +207,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5e-CO-PeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2522" y="275"/>
+            <point key="canvasLocation" x="2532" y="331"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="internet" width="32" height="32"/>
+        <image name="piggy-bank" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
+    </resources>
 </document>

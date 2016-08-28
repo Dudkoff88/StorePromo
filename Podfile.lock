@@ -1,16 +1,19 @@
 PODS:
-  - GoogleMaps (2.0.0):
-    - GoogleMaps/Maps (= 2.0.0)
-  - GoogleMaps/Base (2.0.0)
-  - GoogleMaps/Maps (2.0.0):
-    - GoogleMaps/Base (= 2.0.0)
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
+  - LMGeocoder (1.0.8)
 
 DEPENDENCIES:
   - GoogleMaps
+  - LMGeocoder (~> 1.0)
 
 SPEC CHECKSUMS:
-  GoogleMaps: ed04212f95710a19639fd9950ef97b897e4391de
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
+  LMGeocoder: 7682148ce0bc55e483ceaa0eefdae4494d7102be
 
-PODFILE CHECKSUM: 034d071405b9364596ee77aea97d971dc8b01e1f
+PODFILE CHECKSUM: d28620c913a2c2a44fc7f4457528fbf8a0ad483f
 
 COCOAPODS: 1.0.1

@@ -16,7 +16,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-           self.parentViewController?.navigationItem.title = shop.name
+        let parent = self.parentViewController as! TabController
+        shop = parent.shop
+        parent.navigationItem.title = shop.name
         
         if let url = NSURL(string: shop.url) {
             let request = NSURLRequest(URL: url)

@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyBwreoCUZHyEIWy34btVpEy1eDeasahzmg")
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 34.0/255.0, green:
-            167.0/255.0, blue: 240.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 243.0/255.0, green:
+            156.0/255.0, blue: 18.0/255.0, alpha: 1.0)
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         

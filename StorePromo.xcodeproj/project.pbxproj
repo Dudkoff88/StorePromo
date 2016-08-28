@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6AB05B6A15EF75EABDA2CAFA /* Pods_StorePromo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAB32B7E57379EA5932FBD5 /* Pods_StorePromo.framework */; };
+		84D3EA961D73445B00EBEBFC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D3EA951D73445B00EBEBFC /* CoreLocation.framework */; };
 		84EFB8C31D49F4FC004243CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8C21D49F4FC004243CE /* AppDelegate.swift */; };
 		84EFB8C81D49F4FC004243CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFB8C61D49F4FC004243CE /* Main.storyboard */; };
 		84EFB8CA1D49F4FC004243CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFB8C91D49F4FC004243CE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		6E0AAD86AE4E82DD92DE87CC /* Pods-StorePromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorePromo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StorePromo/Pods-StorePromo.release.xcconfig"; sourceTree = "<group>"; };
+		84D3EA951D73445B00EBEBFC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84EFB8BF1D49F4FC004243CE /* StorePromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorePromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFB8C21D49F4FC004243CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EFB8C71D49F4FC004243CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D3EA961D73445B00EBEBFC /* CoreLocation.framework in Frameworks */,
 				6AB05B6A15EF75EABDA2CAFA /* Pods_StorePromo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 		6386B8C47B9FCD48DEB5C387 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84D3EA951D73445B00EBEBFC /* CoreLocation.framework */,
 				FDAB32B7E57379EA5932FBD5 /* Pods_StorePromo.framework */,
 			);
 			name = Frameworks;
