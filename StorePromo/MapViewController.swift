@@ -9,10 +9,16 @@
 import UIKit
 import GoogleMaps
 import LMGeocoder
+//import CoreLocation
+
 
 class MapViewController: UIViewController {
+
+    @IBOutlet weak var mapView: GMSMapView!
+    
     var shop:Shop!
-    var adresses:[AnyObject] = []
+    //  var adresses:[AnyObject] = []
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,35 +27,24 @@ class MapViewController: UIViewController {
         let parent = self.parentViewController as! TabController
         shop = parent.shop
         
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         
-        let camera = GMSCameraPosition.cameraWithLatitude(53.8586854, longitude: 27.4622865, zoom: 8)
-        let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        mapView.myLocationEnabled = true
-        mapView.settings.myLocationButton = true
-        mapView.center = CGPointMake(<#T##x: CGFloat##CGFloat#>, <#T##y: CGFloat##CGFloat#>)
-        mapView.padding = UIEdgeInsetsMake(0, 0, 50, 0)
-        self.view = mapView
+        self.checkAuthorizationStatus()
         
-        for adress in shop.adresses {
-            LMGeocoder.sharedInstance().geocodeAddressString(adress,
-                                                             service: .GoogleService,
-                                                             completionHandler: ({
-                                                                results, error in
-                                                                if let results = results {
-                                                                    let lmAdress = results.first!
-                                                                    // self.adresses.append(lmAdress!)
-                                                                    print("Coordinate: \(lmAdress.coordinate.latitude), \(lmAdress.coordinate.longitude)")
-                                                                    
-                                                                    let position = CLLocationCoordinate2DMake(lmAdress.coordinate.latitude, lmAdress.coordinate.longitude)
-                                                                    let marker = GMSMarker(position: position)
-                                                                    marker.title = adress
-                                                                    marker.map = mapView
-                                                                }
-                                                             })
-            )
+        if ((NSUserDefaults.standardUserDefaults().objectForKey(shop.adresses.last!)) == nil) {
+            print("CANNOT FIND CACHED LAST VALUE")
+            self.fetchShopAdresses()
+        } else {
+            for adress in shop.adresses {
+                let dict:[String : Double] = NSUserDefaults.standardUserDefaults().objectForKey(adress) as! [String : Double]
+                print("PLACING FROM CACHE: \(dict)")
+                self.placeMarkerForCoordinates(latitude: dict["latitude"], longitude: dict["longitude"], title: adress)
+            }
         }
-
     }
+    
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -61,15 +56,77 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func fetchShopAdresses() {
+        print("fetching adresses")
+        for adress in shop.adresses {
+            LMGeocoder.sharedInstance().geocodeAddressString(adress,
+                                                             service: .GoogleService,
+                                                             completionHandler: ({
+                                                                results, error in
+                                                                if let results = results {
+                                                                    let lmAdress = results.first!
+                                                                    
+                                                                    let dict:[String : Double] = ["latitude": lmAdress.coordinate.latitude, "longitude": lmAdress.coordinate.longitude]
+                                                                    print("CACHING: \(dict)")
+                                                                    NSUserDefaults.standardUserDefaults().setObject(dict, forKey: adress)
+                                                                    
+                                                                    self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
+                                                                    
+                                                                }
+                                })
+            )
+        }
     }
-    */
+    
+    func checkAuthorizationStatus() {
+        if (CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse) {
+            print("AUTHORIZED")
+            locationManager.startUpdatingLocation()
+            
+            mapView.myLocationEnabled = true
+            mapView.settings.myLocationButton = true
+        } else {
+            print("ACCESS ISN'T GRANTED")
+        }
+    }
+    
+    
+    func placeMarkerForCoordinates(latitude latitude: Double?, longitude: Double?, title: String) {
+        
+            let position = CLLocationCoordinate2DMake(latitude!, longitude!)
+            let marker = GMSMarker(position: position)
+            marker.title = title
+            marker.map = self.mapView
+    }
 
 }
+
+// MARK: - CLLocationManagerDelegate
+
+extension MapViewController: CLLocationManagerDelegate {
+
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+
+        if status == .AuthorizedWhenInUse {
+            print("checking status")
+            
+            locationManager.startUpdatingLocation()
+        
+            mapView.myLocationEnabled = true
+            mapView.settings.myLocationButton = true
+        }
+    }
+    
+    // 6
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            print("finished updating locations")
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            locationManager.stopUpdatingLocation()
+        }
+        
+    }
+    
+    
+}
+

@@ -144,9 +144,24 @@
                     <view key="view" contentMode="scaleToFill" id="mQI-3j-ee9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-GQ-Cqm" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SXM-0Y-va2" firstAttribute="top" secondItem="FsM-GQ-Cqm" secondAttribute="bottom" id="5kl-Hf-ulA"/>
+                            <constraint firstItem="FsM-GQ-Cqm" firstAttribute="top" secondItem="t1q-bT-obI" secondAttribute="bottom" id="CDM-6U-uO7"/>
+                            <constraint firstAttribute="trailing" secondItem="FsM-GQ-Cqm" secondAttribute="trailing" id="ds2-Q0-0zz"/>
+                            <constraint firstItem="FsM-GQ-Cqm" firstAttribute="leading" secondItem="mQI-3j-ee9" secondAttribute="leading" id="po1-Jp-Cpu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Карта" image="internet" id="S4L-RO-c16"/>
+                    <connections>
+                        <outlet property="mapView" destination="FsM-GQ-Cqm" id="qkN-Ar-ncc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAW-NV-TnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
