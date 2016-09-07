@@ -9,7 +9,6 @@
 import UIKit
 import GoogleMaps
 import LMGeocoder
-//import CoreLocation
 
 
 class MapViewController: UIViewController {
@@ -30,11 +29,11 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-        self.checkAuthorizationStatus()
+        checkAuthorizationStatus()
         
         if ((NSUserDefaults.standardUserDefaults().objectForKey(shop.adresses.last!)) == nil) {
             print("CANNOT FIND CACHED LAST VALUE")
-            self.fetchShopAdresses()
+            fetchShopAdresses()
         } else {
             for adress in shop.adresses {
                 let dict:[String : Double] = NSUserDefaults.standardUserDefaults().objectForKey(adress) as! [String : Double]
@@ -70,8 +69,8 @@ class MapViewController: UIViewController {
                                                                     print("CACHING: \(dict)")
                                                                     NSUserDefaults.standardUserDefaults().setObject(dict, forKey: adress)
                                                                     
-                                                                    self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
-                                                                    
+                                                                        self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
+  
                                                                 }
                                 })
             )
@@ -108,7 +107,6 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
 
         if status == .AuthorizedWhenInUse {
-            print("checking status")
             
             locationManager.startUpdatingLocation()
         
@@ -117,7 +115,6 @@ extension MapViewController: CLLocationManagerDelegate {
         }
     }
     
-    // 6
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             print("finished updating locations")

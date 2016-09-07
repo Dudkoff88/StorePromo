@@ -8,4 +8,6 @@ target 'StorePromo' do
   # Pods for StorePromo
   pod ‘GoogleMaps’
   pod 'LMGeocoder', '~> 1.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 end

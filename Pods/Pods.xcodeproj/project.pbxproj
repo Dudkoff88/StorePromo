@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		129D9CC4526376EF799CF63BE02E6787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		234F3EA8F13990BF82038BDAFCC462A1 /* LMGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 876B25FE58023E6A9A82BF2AABE5AAFE /* LMGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		567B7836B027C371B055A2D675047A2D /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 793D779A53C1800FE2BF72901E12F144 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D36A358456AF25585F37E8DEF5C81AB /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6430A92A5618F92E9AD130F824B7E6C7 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8299AF72AC6FBCBA1A74273C1D0B33F6 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D3CC5AE8C750911FC2B5006BEEFB8B /* LMGeocoder.m */; };
+		234F3EA8F13990BF82038BDAFCC462A1 /* LMGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 103EDFC1B507AB33FCA1995BAB582431 /* LMGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567B7836B027C371B055A2D675047A2D /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EE186D15798FDF657C1FA9A37B6DF0 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D36A358456AF25585F37E8DEF5C81AB /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7199A3CB6700694F32013BC3F32E762A /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8299AF72AC6FBCBA1A74273C1D0B33F6 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8C3123CFC2B48CA912D0DDFA41D49 /* LMGeocoder.m */; };
 		86219D4315CD7F0860BF0289742613B2 /* Pods-StorePromo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC85E4AAF7E9FA68437C0DE23AC4D6B /* Pods-StorePromo-dummy.m */; };
-		A0D02904DBBB8310A8FB0CBB4FC4C29B /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 53312A29C9A138D0C971D0BE335E5FFB /* LMAddress.m */; };
+		A0D02904DBBB8310A8FB0CBB4FC4C29B /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EEF68CF8631DD46DB53583CA61DAED /* LMAddress.m */; };
 		A943B7A3E761696A588DC5AD970D2A02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B0937A78A153942B134624F779DA5762 /* LMGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C04EFB033847A7D0491A621E7805118 /* LMGeocoder-dummy.m */; };
+		B0937A78A153942B134624F779DA5762 /* LMGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0FC0C87E2519AE16027C569DDF70E5 /* LMGeocoder-dummy.m */; };
 		D8E17DF7AC973FF5BE973DC136720D5A /* Pods-StorePromo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013AF3BCCB6FDCEBB639D5C1B110E81B /* Pods-StorePromo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,32 +31,40 @@
 
 /* Begin PBXFileReference section */
 		013AF3BCCB6FDCEBB639D5C1B110E81B /* Pods-StorePromo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StorePromo-umbrella.h"; sourceTree = "<group>"; };
+		01B8A19274EC113485B2EDE7E59A77DD /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		064E80759D4A583EB2204240CB16E840 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		072E3FBC0C610B7DF38C0CE4D86A576A /* Pods-StorePromo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StorePromo-acknowledgements.plist"; sourceTree = "<group>"; };
 		0BC8D0645506F21B1D63622C5D2FB0E4 /* Pods-StorePromo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StorePromo.modulemap"; sourceTree = "<group>"; };
+		103EDFC1B507AB33FCA1995BAB582431 /* LMGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-umbrella.h"; sourceTree = "<group>"; };
 		199919D26B934DC56F5A4C5A1E1F55AF /* Pods-StorePromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorePromo.release.xcconfig"; sourceTree = "<group>"; };
-		219C85FB79A102DB0960397625632F66 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		2C04EFB033847A7D0491A621E7805118 /* LMGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoder-dummy.m"; sourceTree = "<group>"; };
+		1A719731E510D1484974CC4382BFBA0C /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		1D130EB1E788F67612873B85D6817EE2 /* LMGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LMGeocoder.modulemap; sourceTree = "<group>"; };
+		1FD8C3123CFC2B48CA912D0DDFA41D49 /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoder/LMGeocoder.m; sourceTree = "<group>"; };
+		289CFA071C48E2D13CAB37328F294797 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		28B8C6A3014E3F10F49831EB32FF5070 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		2C8095927849139E1600F05A1113DBD6 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		30EE186D15798FDF657C1FA9A37B6DF0 /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoder/LMAddress.h; sourceTree = "<group>"; };
 		339DB62C71825BE3BC58A9E942BA048B /* Pods_StorePromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorePromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53312A29C9A138D0C971D0BE335E5FFB /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoder/LMAddress.m; sourceTree = "<group>"; };
-		551A422B32940912091C76693A1D2A58 /* LMGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-prefix.pch"; sourceTree = "<group>"; };
-		6430A92A5618F92E9AD130F824B7E6C7 /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoder/LMGeocoder.h; sourceTree = "<group>"; };
-		793D779A53C1800FE2BF72901E12F144 /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoder/LMAddress.h; sourceTree = "<group>"; };
-		876B25FE58023E6A9A82BF2AABE5AAFE /* LMGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-umbrella.h"; sourceTree = "<group>"; };
-		899443C4172456CA2F2423D89BFED77D /* LMGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LMGeocoder.modulemap; sourceTree = "<group>"; };
+		3552BD3F7DA2D5B828BE987100F0BF04 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		67F612701BF710871C1321B9A3A9C2F1 /* LMGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-prefix.pch"; sourceTree = "<group>"; };
+		7199A3CB6700694F32013BC3F32E762A /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoder/LMGeocoder.h; sourceTree = "<group>"; };
 		8ABBB5B2747422F35E31ABD3E6D683D1 /* Pods-StorePromo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorePromo.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B4D3CC5AE8C750911FC2B5006BEEFB8B /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoder/LMGeocoder.m; sourceTree = "<group>"; };
+		9FD8D221B71E1EE19AE7BC93AA5AC830 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		A3C843877C8D1EBFD2CB736D04A59573 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		AF8373A9A4768BC11076A282D6BD402A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B21EE2D85F4AA4D48856E4766C8565 /* LMGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMGeocoder.xcconfig; sourceTree = "<group>"; };
 		CA95EEE2054F48DA30136E85251CB4E5 /* LMGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DE1FB5115E4251DEC689FB2D0CA8537F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE960A760910ABF5BBF4808B194968A9 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		DC23FB673D6297AC20805B21154BB268 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E38843381215B560CFDD71532EAAB2DF /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		E8C82D242390374DD97128E72AAD5AAA /* Pods-StorePromo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorePromo-frameworks.sh"; sourceTree = "<group>"; };
 		EAD7C1B1F0AD3123160616FBD2BCB789 /* Pods-StorePromo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StorePromo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBC5B164BE2C1976310D5D66975C6288 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		F6DC3FB6236B89CE6DFA841DFC32FB90 /* LMGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMGeocoder.xcconfig; sourceTree = "<group>"; };
+		ED0FC0C87E2519AE16027C569DDF70E5 /* LMGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoder-dummy.m"; sourceTree = "<group>"; };
+		F0EEF68CF8631DD46DB53583CA61DAED /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoder/LMAddress.m; sourceTree = "<group>"; };
 		F75C66EB467ED4922CEE653A4521FBDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9E13AB329AC4E5F7ABD6FF710C3721A /* Pods-StorePromo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorePromo-resources.sh"; sourceTree = "<group>"; };
-		FBA170EE74F2CA7B58E3231650C9F82A /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		FEC8DD33DE536A046B872B50D8CDEE63 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		FFC85E4AAF7E9FA68437C0DE23AC4D6B /* Pods-StorePromo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StorePromo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +105,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		101878E448915E5D655E2EAA0DB6E4C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B8A19274EC113485B2EDE7E59A77DD /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A6C47A561524DB1E478077A6E281A9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E38843381215B560CFDD71532EAAB2DF /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		21360D1A11E26AC8867A217E52A1826F /* Pods-StorePromo */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,47 +139,47 @@
 			path = "Target Support Files/Pods-StorePromo";
 			sourceTree = "<group>";
 		};
-		22090DF659D58686BA311BF94D2E6008 /* Support Files */ = {
+		22F0EC465832BE277AC3DC25F2D31703 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				DE1FB5115E4251DEC689FB2D0CA8537F /* Info.plist */,
-				899443C4172456CA2F2423D89BFED77D /* LMGeocoder.modulemap */,
-				F6DC3FB6236B89CE6DFA841DFC32FB90 /* LMGeocoder.xcconfig */,
-				2C04EFB033847A7D0491A621E7805118 /* LMGeocoder-dummy.m */,
-				551A422B32940912091C76693A1D2A58 /* LMGeocoder-prefix.pch */,
-				876B25FE58023E6A9A82BF2AABE5AAFE /* LMGeocoder-umbrella.h */,
+				2C8095927849139E1600F05A1113DBD6 /* FIRInstanceID.h */,
+				293D187ABDEDE723D28378852709F368 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		280C4604B0B7571C07D94B318E386A01 /* LMGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				30EE186D15798FDF657C1FA9A37B6DF0 /* LMAddress.h */,
+				F0EEF68CF8631DD46DB53583CA61DAED /* LMAddress.m */,
+				7199A3CB6700694F32013BC3F32E762A /* LMGeocoder.h */,
+				1FD8C3123CFC2B48CA912D0DDFA41D49 /* LMGeocoder.m */,
+				3DCA7A8483F132F60708D148F6751746 /* Support Files */,
+			);
+			path = LMGeocoder;
+			sourceTree = "<group>";
+		};
+		293D187ABDEDE723D28378852709F368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				289CFA071C48E2D13CAB37328F294797 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DCA7A8483F132F60708D148F6751746 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF8373A9A4768BC11076A282D6BD402A /* Info.plist */,
+				1D130EB1E788F67612873B85D6817EE2 /* LMGeocoder.modulemap */,
+				B1B21EE2D85F4AA4D48856E4766C8565 /* LMGeocoder.xcconfig */,
+				ED0FC0C87E2519AE16027C569DDF70E5 /* LMGeocoder-dummy.m */,
+				67F612701BF710871C1321B9A3A9C2F1 /* LMGeocoder-prefix.pch */,
+				103EDFC1B507AB33FCA1995BAB582431 /* LMGeocoder-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LMGeocoder";
-			sourceTree = "<group>";
-		};
-		25A2AC552E97BF503CC48EE39BE0EC38 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				7B047FD724A1A070BCBDECF8ABE32851 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		35EA97909D450953031EF1FA2BE5C8DB /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				25A2AC552E97BF503CC48EE39BE0EC38 /* Base */,
-				DB8878DB34315F0B2AC8DE054E6CA366 /* Maps */,
-			);
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		3B3BACB9F6CF86F76D9CE85BA2CFD422 /* LMGeocoder */ = {
-			isa = PBXGroup;
-			children = (
-				793D779A53C1800FE2BF72901E12F144 /* LMAddress.h */,
-				53312A29C9A138D0C971D0BE335E5FFB /* LMAddress.m */,
-				6430A92A5618F92E9AD130F824B7E6C7 /* LMGeocoder.h */,
-				B4D3CC5AE8C750911FC2B5006BEEFB8B /* LMGeocoder.m */,
-				22090DF659D58686BA311BF94D2E6008 /* Support Files */,
-			);
-			path = LMGeocoder;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -166,29 +190,70 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		420F4EAF46118DC24968AAB1DCBCBED5 /* Resources */ = {
+		42484D8BAA59E3B91F63BB49E21C7866 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				219C85FB79A102DB0960397625632F66 /* GoogleMaps.bundle */,
+				1A6C47A561524DB1E478077A6E281A9B /* Frameworks */,
 			);
-			name = Resources;
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		5D49B51A447B78D2B83119102C4B860B /* Pods */ = {
+		45B54C1B58D0462CF7465A31CD9709F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				35EA97909D450953031EF1FA2BE5C8DB /* GoogleMaps */,
-				3B3BACB9F6CF86F76D9CE85BA2CFD422 /* LMGeocoder */,
+				7D1B81C77CF6AFE493CF9879ACAEB24A /* Firebase */,
+				88AA9A8846AE9E4B82FEBF105579C9D0 /* FirebaseAnalytics */,
+				22F0EC465832BE277AC3DC25F2D31703 /* FirebaseInstanceID */,
+				42484D8BAA59E3B91F63BB49E21C7866 /* Google-Mobile-Ads-SDK */,
+				85F8819DA22AEB80CF7E5511120AF46F /* GoogleInterchangeUtilities */,
+				4BB50670A07AF43975294CAEBD7EAACF /* GoogleMaps */,
+				5026AA8FDB765C28F8C4F104204E1354 /* GoogleSymbolUtilities */,
+				A45811BDD99F49A8E7B798D9623A3B3F /* GoogleUtilities */,
+				280C4604B0B7571C07D94B318E386A01 /* LMGeocoder */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7B047FD724A1A070BCBDECF8ABE32851 /* Frameworks */ = {
+		4BB50670A07AF43975294CAEBD7EAACF /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				FBA170EE74F2CA7B58E3231650C9F82A /* GoogleMapsBase.framework */,
+				DD77BF0414AC323222AB10C1B0058F60 /* Base */,
+				EE7A451E789DC2ADC0157D28726E5679 /* Maps */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		5026AA8FDB765C28F8C4F104204E1354 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B38C2E6A7E2EC0C585776C050410B9D4 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		5B7C8CBFC27E44AA0FF9C6D913D6A76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3C843877C8D1EBFD2CB736D04A59573 /* GoogleMaps.framework */,
+				3552BD3F7DA2D5B828BE987100F0BF04 /* GoogleMapsCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7143EA9297ACF1052E3B10B75CC3D9E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC23FB673D6297AC20805B21154BB268 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D1B81C77CF6AFE493CF9879ACAEB24A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D676F289216D2E0AD3E6FCD1C165B5AD /* Analytics */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -196,10 +261,50 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5D49B51A447B78D2B83119102C4B860B /* Pods */,
+				45B54C1B58D0462CF7465A31CD9709F6 /* Pods */,
 				0822215DD5581632D19E8C25A7E275C7 /* Products */,
 				0514D870624E05741AEBCC41E83B845D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		85F8819DA22AEB80CF7E5511120AF46F /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				7143EA9297ACF1052E3B10B75CC3D9E3 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		88AA9A8846AE9E4B82FEBF105579C9D0 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				101878E448915E5D655E2EAA0DB6E4C0 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		8F10094D4188182526D41C18DCBFCF7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FD8D221B71E1EE19AE7BC93AA5AC830 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A45811BDD99F49A8E7B798D9623A3B3F /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F10094D4188182526D41C18DCBFCF7A /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		B38C2E6A7E2EC0C585776C050410B9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A719731E510D1484974CC4382BFBA0C /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -210,22 +315,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB8878DB34315F0B2AC8DE054E6CA366 /* Maps */ = {
+		C1DF3C2E64D93C8C305D513CD7BE6C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6223155330E07E3CE7F5A1E94472CED /* Frameworks */,
-				420F4EAF46118DC24968AAB1DCBCBED5 /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		F6223155330E07E3CE7F5A1E94472CED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DE960A760910ABF5BBF4808B194968A9 /* GoogleMaps.framework */,
-				EBC5B164BE2C1976310D5D66975C6288 /* GoogleMapsCore.framework */,
+				28B8C6A3014E3F10F49831EB32FF5070 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D676F289216D2E0AD3E6FCD1C165B5AD /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				064E80759D4A583EB2204240CB16E840 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		DB67F42C8F558EAB3FE2C54B93764E76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEC8DD33DE536A046B872B50D8CDEE63 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD77BF0414AC323222AB10C1B0058F60 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF3C2E64D93C8C305D513CD7BE6C93 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		EE7A451E789DC2ADC0157D28726E5679 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C8CBFC27E44AA0FF9C6D913D6A76E /* Frameworks */,
+				DB67F42C8F558EAB3FE2C54B93764E76 /* Resources */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,7 +517,7 @@
 		};
 		50DAF24974623E8A75F6A56147A4092C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6DC3FB6236B89CE6DFA841DFC32FB90 /* LMGeocoder.xcconfig */;
+			baseConfigurationReference = B1B21EE2D85F4AA4D48856E4766C8565 /* LMGeocoder.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -522,7 +650,7 @@
 		};
 		DC78A27AAB78C9FFF18A069D77B79317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6DC3FB6236B89CE6DFA841DFC32FB90 /* LMGeocoder.xcconfig */;
+			baseConfigurationReference = B1B21EE2D85F4AA4D48856E4766C8565 /* LMGeocoder.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

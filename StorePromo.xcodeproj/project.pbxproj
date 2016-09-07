@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4055AEB61D80536300A94426 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4055AEB51D80536300A94426 /* GoogleService-Info.plist */; };
+		4055AEB81D80563500A94426 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4055AEB71D80563500A94426 /* GoogleMobileAds.framework */; };
+		4055AEBA1D805A3000A94426 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055AEB91D805A3000A94426 /* MainViewController.swift */; };
 		6AB05B6A15EF75EABDA2CAFA /* Pods_StorePromo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAB32B7E57379EA5932FBD5 /* Pods_StorePromo.framework */; };
 		84D3EA961D73445B00EBEBFC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D3EA951D73445B00EBEBFC /* CoreLocation.framework */; };
 		84EFB8C31D49F4FC004243CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8C21D49F4FC004243CE /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4055AEB51D80536300A94426 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4055AEB71D80563500A94426 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		4055AEB91D805A3000A94426 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6E0AAD86AE4E82DD92DE87CC /* Pods-StorePromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorePromo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StorePromo/Pods-StorePromo.release.xcconfig"; sourceTree = "<group>"; };
 		84D3EA951D73445B00EBEBFC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84EFB8BF1D49F4FC004243CE /* StorePromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorePromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4055AEB81D80563500A94426 /* GoogleMobileAds.framework in Frameworks */,
 				84D3EA961D73445B00EBEBFC /* CoreLocation.framework in Frameworks */,
 				6AB05B6A15EF75EABDA2CAFA /* Pods_StorePromo.framework in Frameworks */,
 			);
@@ -56,6 +63,7 @@
 		6386B8C47B9FCD48DEB5C387 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4055AEB71D80563500A94426 /* GoogleMobileAds.framework */,
 				84D3EA951D73445B00EBEBFC /* CoreLocation.framework */,
 				FDAB32B7E57379EA5932FBD5 /* Pods_StorePromo.framework */,
 			);
@@ -95,11 +103,13 @@
 				84EFB8C21D49F4FC004243CE /* AppDelegate.swift */,
 				84EFB8D41D49F815004243CE /* ShopTableViewController.swift */,
 				84EFB8D81D4A09D4004243CE /* DetailViewController.swift */,
+				4055AEB91D805A3000A94426 /* MainViewController.swift */,
 				84EFB8DF1D4ABC44004243CE /* MapViewController.swift */,
 				84EFB8C61D49F4FC004243CE /* Main.storyboard */,
 				84EFB8C91D49F4FC004243CE /* Assets.xcassets */,
 				84EFB8CB1D49F4FC004243CE /* LaunchScreen.storyboard */,
 				84EFB8CE1D49F4FC004243CE /* Info.plist */,
+				4055AEB51D80536300A94426 /* GoogleService-Info.plist */,
 				84EFB8D61D4A00E5004243CE /* ShopTableViewCell.swift */,
 				84EFB8DA1D4A0B79004243CE /* Shop.swift */,
 				84EFB8DD1D4AA0B2004243CE /* TabController.swift */,
@@ -170,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EFB8CD1D49F4FC004243CE /* LaunchScreen.storyboard in Resources */,
+				4055AEB61D80536300A94426 /* GoogleService-Info.plist in Resources */,
 				84EFB8CA1D49F4FC004243CE /* Assets.xcassets in Resources */,
 				84EFB8C81D49F4FC004243CE /* Main.storyboard in Resources */,
 			);
@@ -237,6 +248,7 @@
 				84EFB8DB1D4A0B79004243CE /* Shop.swift in Sources */,
 				84EFB8D91D4A09D4004243CE /* DetailViewController.swift in Sources */,
 				84EFB8E01D4ABC44004243CE /* MapViewController.swift in Sources */,
+				4055AEBA1D805A3000A94426 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +365,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StorePromo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -367,6 +383,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StorePromo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,6 +1,26 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Firebase
+
+Copyright 2016 Google
+
+## FirebaseAnalytics
+
+Copyright 2016 Google
+
+## FirebaseInstanceID
+
+Copyright 2016 Google
+
+## Google-Mobile-Ads-SDK
+
+Copyright 2011 Google Inc. All Rights Reserved.
+
+## GoogleInterchangeUtilities
+
+Copyright 2015 Google Inc.
+
 ## GoogleMaps
 
 If you use the Google Maps SDK for iOS in your application, you must
@@ -11,6 +31,14 @@ part of an "About" menu item, is recommended.
 You can get the attribution text by making a call to
 GMSServices.openSourceLicenseInfo().
 
+
+## GoogleSymbolUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleUtilities
+
+Copyright 2015 Google Inc.
 
 ## LMGeocoder
 
