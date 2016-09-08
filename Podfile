@@ -10,4 +10,5 @@ target 'StorePromo' do
   pod 'LMGeocoder', '~> 1.0'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
+  pod 'Firebase/Storage’	
 end

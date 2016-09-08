@@ -16,7 +16,6 @@
 		84EFB8C81D49F4FC004243CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFB8C61D49F4FC004243CE /* Main.storyboard */; };
 		84EFB8CA1D49F4FC004243CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFB8C91D49F4FC004243CE /* Assets.xcassets */; };
 		84EFB8CD1D49F4FC004243CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFB8CB1D49F4FC004243CE /* LaunchScreen.storyboard */; };
-		84EFB8D51D49F815004243CE /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8D41D49F815004243CE /* ShopTableViewController.swift */; };
 		84EFB8D71D4A00E5004243CE /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8D61D4A00E5004243CE /* ShopTableViewCell.swift */; };
 		84EFB8D91D4A09D4004243CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8D81D4A09D4004243CE /* DetailViewController.swift */; };
 		84EFB8DB1D4A0B79004243CE /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB8DA1D4A0B79004243CE /* Shop.swift */; };
@@ -36,7 +35,6 @@
 		84EFB8C91D49F4FC004243CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EFB8CC1D49F4FC004243CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EFB8CE1D49F4FC004243CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84EFB8D41D49F815004243CE /* ShopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
 		84EFB8D61D4A00E5004243CE /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		84EFB8D81D4A09D4004243CE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84EFB8DA1D4A0B79004243CE /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				84EFB8C21D49F4FC004243CE /* AppDelegate.swift */,
-				84EFB8D41D49F815004243CE /* ShopTableViewController.swift */,
 				84EFB8D81D4A09D4004243CE /* DetailViewController.swift */,
 				4055AEB91D805A3000A94426 /* MainViewController.swift */,
 				84EFB8DF1D4ABC44004243CE /* MapViewController.swift */,
@@ -244,7 +241,6 @@
 				84EFB8D71D4A00E5004243CE /* ShopTableViewCell.swift in Sources */,
 				84EFB8DE1D4AA0B2004243CE /* TabController.swift in Sources */,
 				84EFB8C31D49F4FC004243CE /* AppDelegate.swift in Sources */,
-				84EFB8D51D49F815004243CE /* ShopTableViewController.swift in Sources */,
 				84EFB8DB1D4A0B79004243CE /* Shop.swift in Sources */,
 				84EFB8D91D4A09D4004243CE /* DetailViewController.swift in Sources */,
 				84EFB8E01D4ABC44004243CE /* MapViewController.swift in Sources */,

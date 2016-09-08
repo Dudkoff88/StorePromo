@@ -13,6 +13,10 @@ Copyright 2016 Google
 
 Copyright 2016 Google
 
+## FirebaseStorage
+
+Copyright 2016 Google
+
 ## Google-Mobile-Ads-SDK
 
 Copyright 2011 Google Inc. All Rights Reserved.
@@ -31,6 +35,10 @@ part of an "About" menu item, is recommended.
 You can get the attribution text by making a call to
 GMSServices.openSourceLicenseInfo().
 
+
+## GoogleNetworkingUtilities
+
+Copyright 2015 Google Inc.
 
 ## GoogleSymbolUtilities
 
