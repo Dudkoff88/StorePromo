@@ -74,7 +74,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let request = GADRequest()
         request.testDevices = ["ee960cd9707ea855be8045291c9024f7"] // real device
-      //  request.testDevices = @[ kGADSimulatorID ] //iOS Simulator
+        //  request.testDevices = [kGADSimulatorID] //iOS Simulator
         bannerView.loadRequest(request)
 
     }

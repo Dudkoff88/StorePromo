@@ -28,39 +28,29 @@ class DetailViewController: UIViewController {
         
         let fileRef = storageRef.child("\(shop.image)/\(shop.image).pdf")
         
-        let localFileURL = NSURL(fileURLWithPath: NSTemporaryDirectory()).URLByAppendingPathComponent(shop.image)
+        let documentsUrl =  NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first
+        let destinationUrl = documentsUrl!.URLByAppendingPathComponent(shop.image)
+        print(destinationUrl)
 
-        
-        //check metadata properties
+        //check metadata.timeCreated property and look for a new file
         isNewFileAtReference(fileRef, oldFileDate: NSUserDefaults.standardUserDefaults().stringForKey("\(shop.image)/lastDate")) {
             fileIsNew in
-            print("boolToReturn: \(fileIsNew)")
             if fileIsNew {
                 //new file and we should download and display it after finishing downloading
-            fileRef.writeToFile(localFileURL, completion: {
+            fileRef.writeToFile(destinationUrl, completion: {
                     (URL, error) -> Void in
                     if (error != nil) {
                         print("error while downloading file: \(error)")
                     } else {
-                        print("URL: \(URL)")
-                        self.displayFileFromURL(URL!)
+                        self.displayFileFromURL(destinationUrl)
                     }
                 })
             } else {
                 //display old file
                 print("found file in storage - showing it!")
-                self.displayFileFromURL(localFileURL)
+                self.displayFileFromURL(destinationUrl)
             }
         }
-
-        
-        //  DEFAULT IMPLEMENTATION
-        /*
-         if let url = NSURL(string: shop.url) {
-            let request = NSURLRequest(URL: url)
-            webView.loadRequest(request)
-        }
-         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,20 +85,6 @@ class DetailViewController: UIViewController {
     }
     
     private func displayFileFromURL(url: NSURL) {
-        print("in display file method")
-        let request = NSURLRequest(URL: url)
-        webView.loadRequest(request)
+        webView.loadData(NSData(contentsOfURL: url)!, MIMEType: "application/pdf", textEncodingName: "", baseURL: url.URLByDeletingLastPathComponent!)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

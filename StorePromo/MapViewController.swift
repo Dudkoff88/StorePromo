@@ -68,10 +68,11 @@ class MapViewController: UIViewController {
                                                                     let dict:[String : Double] = ["latitude": lmAdress.coordinate.latitude, "longitude": lmAdress.coordinate.longitude]
                                                                     print("CACHING: \(dict)")
                                                                     NSUserDefaults.standardUserDefaults().setObject(dict, forKey: adress)
-                                                                    
-                                                                        self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
-  
-                                                                }
+
+                                                                    dispatch_async(dispatch_get_main_queue(), {
+                                                                      self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
+                                                                    })  
+                                                            }
                                 })
             )
         }
