@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GADAppEventDelegate, GADBannerViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bannerView: GADBannerView!
@@ -61,22 +62,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             .Plain, target: nil, action: nil)
         
         print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
-
         bannerView.adUnitID = "ca-app-pub-9164174062846184/1239951757"
-        bannerView.adSize = kGADAdSizeBanner
-        print("\(bannerView.adSize)")
-        print("\(bannerView.frame.width), \(bannerView.frame.height)")
+        bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        bannerView.delegate = self
         bannerView.rootViewController = self
-        let request = GADRequest()
-      //  request.testDevices = ["ee960cd9707ea855be8045291c9024f7"]
-        bannerView.loadRequest(request)
-    
+
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-
+        let request = GADRequest()
+        request.testDevices = ["ee960cd9707ea855be8045291c9024f7"]
+        bannerView.loadRequest(request)
 
     }
     
@@ -108,6 +106,24 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.numberOfShops.text = "\(shops[indexPath.row].adresses .count)"
         
         return cell
+    }
+    
+    //MARK: - AdMob delegate methods
+    
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        self.bannerView.hidden = false
+        print("displayed new ad!")
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        self.bannerView.hidden = true
+        print(error)
+    }
+    
+    //MARK: - Table view delegate methods
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     
