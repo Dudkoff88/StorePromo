@@ -39,8 +39,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                             "г. Минск, пр-т Газеты “Звезда”, 16/1-2",
                             "г. Минск, пр-т Партизанский, 13",
                             "г. Минск, пр-т Партизанский, 48",
-                            "г. Минск, пр-т Победителей, 1",
-                            "г. Минск, пр-т Пушкина, 12а",
+                            "г. Минск, пр. Победителей, 1",
+                            "г. Минск, пр. Пушкина, 12а",
                             "г. Минск, пр-т Рокоссовского, 114",
                             "г. Минск, пр. Любимова, 17",
                             "г. Минск, пр. Независимости, 117",
@@ -84,8 +84,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         
         let request = GADRequest()
-        request.testDevices = ["ee960cd9707ea855be8045291c9024f7"] // real device
-        //  request.testDevices = [kGADSimulatorID] //iOS Simulator
+        request.testDevices = [kGADSimulatorID, "ee960cd9707ea855be8045291c9024f7"]
         bannerView.loadRequest(request)
 
     }

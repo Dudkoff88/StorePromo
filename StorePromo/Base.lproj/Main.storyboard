@@ -129,16 +129,6 @@
             </objects>
             <point key="canvasLocation" x="2638" y="-336"/>
         </scene>
-        <!--Магазины-->
-        <scene sceneID="60M-iP-FaB">
-            <objects>
-                <tableViewController id="Im9-FO-eMd" customClass="ShopTableViewController" customModule="StorePromo" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Магазины" id="WPo-NY-dZ2"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="poH-pa-scz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1775" y="740"/>
-        </scene>
         <!--Акции-->
         <scene sceneID="kkl-MI-XW7">
             <objects>
@@ -224,26 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDR-kl-4jB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3253" y="844"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="4sG-6X-K1g">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7z-gZ-e9Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vZQ-nl-ris"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dKp-8L-2WA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Im9-FO-eMd" kind="relationship" relationship="rootViewController" id="kDI-6F-54U"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="azm-Lo-3hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="997" y="740"/>
+            <point key="canvasLocation" x="4083" y="966"/>
         </scene>
         <!--Tab Controller-->
         <scene sceneID="4Pe-52-R1z">

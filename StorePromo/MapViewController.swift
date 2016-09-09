@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
             for adress in shop.adresses {
                 let dict:[String : Double] = NSUserDefaults.standardUserDefaults().objectForKey(adress) as! [String : Double]
                 print("PLACING FROM CACHE: \(dict)")
-                self.placeMarkerForCoordinates(latitude: dict["latitude"], longitude: dict["longitude"], title: adress)
+                placeMarkerForCoordinates(latitude: dict["latitude"], longitude: dict["longitude"], title: adress)
             }
         }
     }
@@ -87,6 +87,7 @@ class MapViewController: UIViewController {
             mapView.settings.myLocationButton = true
         } else {
             print("ACCESS ISN'T GRANTED")
+            locationManager.requestWhenInUseAuthorization()
         }
     }
     
@@ -96,7 +97,7 @@ class MapViewController: UIViewController {
             let position = CLLocationCoordinate2DMake(latitude!, longitude!)
             let marker = GMSMarker(position: position)
             marker.title = title
-            marker.map = self.mapView
+            marker.map = mapView
     }
 
 }
@@ -123,6 +124,32 @@ extension MapViewController: CLLocationManagerDelegate {
             locationManager.stopUpdatingLocation()
         }
         
+    }
+    
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+        let size = image.size
+        
+        let widthRatio  = targetSize.width  / image.size.width
+        let heightRatio = targetSize.height / image.size.height
+        
+        // Figure out what our orientation is, and use that to form the rectangle
+        var newSize: CGSize
+        if(widthRatio > heightRatio) {
+            newSize = CGSizeMake(size.width * heightRatio, size.height * heightRatio)
+        } else {
+            newSize = CGSizeMake(size.width * widthRatio,  size.height * widthRatio)
+        }
+        
+        // This is the rect that we've calculated out and this is what is actually used below
+        let rect = CGRectMake(0, 0, newSize.width, newSize.height)
+        
+        // Actually do the resizing to the rect using the ImageContext stuff
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        image.drawInRect(rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
     }
     
     
