@@ -35,6 +35,7 @@ class DetailViewController: UIViewController {
         //check metadata.timeCreated property and look for a new file
         isNewFileAtReference(fileRef, oldFileDate: NSUserDefaults.standardUserDefaults().stringForKey("\(shop.image)/lastDate")) {
             fileIsNew in
+            print("file is new? \(fileIsNew)")
             if fileIsNew {
                 //new file and we should download and display it after finishing downloading
             fileRef.writeToFile(destinationUrl, completion: {
@@ -42,13 +43,23 @@ class DetailViewController: UIViewController {
                     if (error != nil) {
                         print("error while downloading file: \(error)")
                     } else {
+                        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasFileForShop\(self.shop.image)")
                         self.displayFileFromURL(destinationUrl)
                     }
                 })
             } else {
                 //display old file
                 print("found file in storage - showing it!")
+                if (NSUserDefaults.standardUserDefaults().boolForKey("hasFileForShop\(self.shop.image)")) {
                 self.displayFileFromURL(destinationUrl)
+                } else {
+                    let alertViewController = UIAlertController.init(title: "NO INTERNET", message: "please conncect", preferredStyle: .Alert)
+                    let action = UIAlertAction.init(title: "ok", style: .Default, handler: { action in
+                        self.navigationController?.popToRootViewControllerAnimated(true)
+                    })
+                    alertViewController.addAction(action)
+                    self.presentViewController(alertViewController, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -66,16 +77,12 @@ class DetailViewController: UIViewController {
                 } else {
                     print("Metadata.timeCreated: \(metadata!.timeCreated!)")
                     if let oldDate = oldFileDate {
-                        if (oldDate == String(metadata!.timeCreated!)) {
-                            print("DATES ARE EQUAL")
-                            boolToReturn = false
-                        } else {
-                            print("should download file")
+                        if (oldDate != String(metadata!.timeCreated!)) {
+                        print("should download file")
                         NSUserDefaults.standardUserDefaults().setObject(String(metadata!.timeCreated!), forKey: "\(self.shop.image)/lastDate")
-                            boolToReturn = true
+                        boolToReturn = true
                         }
                     } else {
-                        print("set new object to UserDefaults")
                         NSUserDefaults.standardUserDefaults().setObject(String(metadata!.timeCreated!), forKey: "\(self.shop.image)/lastDate")
                         boolToReturn = true
                     }
