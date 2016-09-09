@@ -145,7 +145,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationViewController = segue.destinationViewController as! TabController
                 destinationViewController.shop = shops[indexPath.row]
-                //   let detailViewController = destinationViewController.viewControllers![0] as! DetailViewController
             }
         }
     }

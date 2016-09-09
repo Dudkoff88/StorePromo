@@ -31,10 +31,13 @@ class MapViewController: UIViewController {
         
         checkAuthorizationStatus()
         
+         //проверяем что в Дефаултс сохранены все геокодированые адреса
         if ((NSUserDefaults.standardUserDefaults().objectForKey(shop.adresses.last!)) == nil) {
             print("CANNOT FIND CACHED LAST VALUE")
+            //если нет, то кодируем их, сохраняем в NSUserDefaults и отображаем на карте
             fetchShopAdresses()
         } else {
+            //если все адреса геокодированы - отображаем их из кэша
             for adress in shop.adresses {
                 let dict:[String : Double] = NSUserDefaults.standardUserDefaults().objectForKey(adress) as! [String : Double]
                 print("PLACING FROM CACHE: \(dict)")
@@ -43,13 +46,6 @@ class MapViewController: UIViewController {
         }
     }
     
-    
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-            }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,6 +54,7 @@ class MapViewController: UIViewController {
     func fetchShopAdresses() {
         print("fetching adresses")
         for adress in shop.adresses {
+            //геокодируем каждый адрес из массива адресов
             LMGeocoder.sharedInstance().geocodeAddressString(adress,
                                                              service: .GoogleService,
                                                              completionHandler: ({
@@ -67,9 +64,11 @@ class MapViewController: UIViewController {
                                                                     
                                                                     let dict:[String : Double] = ["latitude": lmAdress.coordinate.latitude, "longitude": lmAdress.coordinate.longitude]
                                                                     print("CACHING: \(dict)")
+                                                                    //преобразуем в словарь, содержащий широту и долготу для каждого адреса
                                                                     NSUserDefaults.standardUserDefaults().setObject(dict, forKey: adress)
 
                                                                     dispatch_async(dispatch_get_main_queue(), {
+                                                                        //ставим маркеры на карте в мейнтреде
                                                                       self.placeMarkerForCoordinates(latitude: lmAdress.coordinate.latitude, longitude: lmAdress.coordinate.longitude, title: adress)
                                                                     })  
                                                             }
@@ -125,33 +124,5 @@ extension MapViewController: CLLocationManagerDelegate {
         }
         
     }
-    
-    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
-        let size = image.size
-        
-        let widthRatio  = targetSize.width  / image.size.width
-        let heightRatio = targetSize.height / image.size.height
-        
-        // Figure out what our orientation is, and use that to form the rectangle
-        var newSize: CGSize
-        if(widthRatio > heightRatio) {
-            newSize = CGSizeMake(size.width * heightRatio, size.height * heightRatio)
-        } else {
-            newSize = CGSizeMake(size.width * widthRatio,  size.height * widthRatio)
-        }
-        
-        // This is the rect that we've calculated out and this is what is actually used below
-        let rect = CGRectMake(0, 0, newSize.width, newSize.height)
-        
-        // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        image.drawInRect(rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage
-    }
-    
-    
 }
 

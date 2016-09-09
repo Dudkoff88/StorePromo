@@ -15,17 +15,17 @@ import CFAlertViewController
 class DetailViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var webView: UIWebView!
     private var shop:Shop!
-    private var interstitial: GADInterstitial!
+    var interstitial: GADInterstitial!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Получаем текущий магазин у родителя - TabViewController
         let parent = self.parentViewController as! TabController
         shop = parent.shop
         parent.navigationItem.title = shop.name
         
-        //get Firebase database reference to selected shop folder
+        //устанавливаем соединение с БД Firebase а так же загружаем межстраничную рекламу
         
         createAndLoadInterstitial()
         
@@ -38,11 +38,12 @@ class DetailViewController: UIViewController, GADInterstitialDelegate {
         let destinationUrl = documentsUrl!.URLByAppendingPathComponent(shop.image)
         print(destinationUrl)
 
-        //check metadata.timeCreated property and look for a new file
+        //сверяем свойство timeCreated файла на сервере с сохраненным файлом в системе
         isNewFileAtReference(fileRef, oldFileDate: NSUserDefaults.standardUserDefaults().stringForKey("\(shop.image)/lastDate")) {
             fileIsNew, metadata in
             print("file is new? \(fileIsNew)")
             if fileIsNew {
+                // если на сервере есть новый файл - предлагаем его загрузить
                 let cfAlertViewController = CFAlertViewController.alertControllerWithTitle("Есть новый файл!", message: "Загрузим его? (размер файла: \((metadata?.size)! / 1_000_000) Мб)", textAlignment: .Center, preferredStyle: .Alert, didDismissAlertHandler: nil)
                 let yesCFAction = CFAlertAction.init(title: "Да!", style: .Default, alignment: .Justified, color: nil, handler: { action in
                     self.beginDownloadingFromReference(fileRef, toURL: destinationUrl)
@@ -53,14 +54,13 @@ class DetailViewController: UIViewController, GADInterstitialDelegate {
                 })
                 cfAlertViewController.addAction(yesCFAction!)
                 if (NSUserDefaults.standardUserDefaults().boolForKey("hasFileForShop\(self.shop.image)")) {
+                    // при первом запуске приложения пользователь обязан загрузить файл
                     cfAlertViewController.addAction(noCFAction!)
                 }
                 cfAlertViewController.shouldDismissOnBackgroundTap = false
                 self.presentViewController(cfAlertViewController, animated: true, completion: nil)
-                //new file and we should download and display it after finishing downloading
-         
             } else {
-                //display old file
+                //найден сохраненный файл для выбранного магазина - отображаем его
                 if (NSUserDefaults.standardUserDefaults().boolForKey("hasFileForShop\(self.shop.image)")) {
                     self.displayFileFromURL(destinationUrl)
                 } else {
@@ -84,9 +84,11 @@ class DetailViewController: UIViewController, GADInterstitialDelegate {
                     print("Metadata.timeCreated: \(metadata!.timeCreated!)")
                     if let oldDate = oldFileDate {
                         if (oldDate != String(metadata!.timeCreated!)) {
+                            //если значениe метадаты на сервере не сходится с сохраненным в системе - значит это новый файл
                         fileIsNew = true
                         }
                     } else {
+                        // этот код будет выполнен только при первом запуске приложения
                         fileIsNew = true
                     }
                 }
@@ -94,7 +96,7 @@ class DetailViewController: UIViewController, GADInterstitialDelegate {
             })
     }
     
-    //MARK: - Downloading and displaying files
+    //  MARK: - Downloading and displaying files
     
     private func displayFileFromURL(url: NSURL) {
         webView.loadData(NSData(contentsOfURL: url)!, MIMEType: "application/pdf", textEncodingName: "", baseURL: url.URLByDeletingLastPathComponent!)
@@ -111,37 +113,38 @@ class DetailViewController: UIViewController, GADInterstitialDelegate {
     }
     
     private func beginDownloadingFromReference(fileRef: FIRStorageReference, toURL: NSURL) {
-      //  if interstitial.isReady {
-            interstitial.presentFromRootViewController(self)
-     //   } else {
-     //       print("Ad wasn't ready")
-     //   }
+        //показываем рекламу во время загрузки
+        interstitial.presentFromRootViewController(self)
+        
         let downloadTask = fileRef.writeToFile(toURL, completion: {
             (URL, error) -> Void in
             if (error != nil) {
                 print("error while downloading file: \(error)")
             } else {
+                //загрузив файл - помечаем что для данного магазина файл уже есть
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasFileForShop\(self.shop.image)")
                 self.displayFileFromURL(toURL)
             }
         })
         downloadTask.observeStatus(.Progress, handler: { (snapshot) -> Void in
-         //   self.parentViewController!.view.userInteractionEnabled = false
+            //отключаем взаимодействие с бэкграундом на время загрузки
+            self.parentViewController!.view.userInteractionEnabled = false
+            //отображаем progressView
             ARSLineProgress.showWithProgressObject(snapshot.progress!, completionBlock: {
-            //    self.parentViewController!.view.userInteractionEnabled = true
+                self.parentViewController!.view.userInteractionEnabled = true
             })
         })
     }
     
-    //MARK: - Google Ads Functions
+    // MARK: - Google Ads Functions
     
-    private func createAndLoadInterstitial() {
+    func createAndLoadInterstitial() {
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-9164174062846184/9782293357")
         interstitial.delegate = self
         let request = GADRequest()
         // Request test ads on devices you specify. Your test device ID is printed to the console when
         // an ad request is made.
-        request.testDevices = [ kGADSimulatorID, "ee960cd9707ea855be8045291c9024f7" ]
+       // request.testDevices = [ kGADSimulatorID, "ee960cd9707ea855be8045291c9024f7" ]
         interstitial.loadRequest(request)
     }
     
