@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
             print("file is new? \(fileIsNew)")
             if fileIsNew {
                 //new file and we should download and display it after finishing downloading
-            fileRef.writeToFile(destinationUrl, completion: {
+           let downloadTask = fileRef.writeToFile(destinationUrl, completion: {
                     (URL, error) -> Void in
                     if (error != nil) {
                         print("error while downloading file: \(error)")
@@ -46,6 +46,14 @@ class DetailViewController: UIViewController {
                         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasFileForShop\(self.shop.image)")
                         self.displayFileFromURL(destinationUrl)
                     }
+                })
+                downloadTask.observeStatus(.Progress, handler: { (snapshot) -> Void in
+                    let percentComplete = 100 * (snapshot.progress?.completedUnitCount)! / (snapshot.progress?.totalUnitCount)!
+                    print("percentComplete: \(percentComplete)")
+                    ARSLineProgress.showWithProgressObject(snapshot.progress!, completionBlock: {
+                        print("COMPLETED")
+                    })
+                    
                 })
             } else {
                 //display old file

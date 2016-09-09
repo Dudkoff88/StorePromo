@@ -15,8 +15,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bannerView: GADBannerView!
     
-    let shops:[Shop] = [Shop(name: "Алми", image: "almi", logo: "almi_logo", url: "http://almi.su/rb/90.html", adresses: ["Минск, пр-т Газеты Звезда 57"]),
-                        Shop(name: "Гиппо", image: "gippo", logo: "gippo_logo", url: "http://gippo.by/ru/clients/specoffers/", adresses:["Минск, пр-т Рокоссовского 2",
+    let shops:[Shop] = [
+        // Shop(name: "Алми", image: "almi", logo: "almi_logo",  adresses: ["Минск, пр-т Газеты Звезда 57"]),
+                        Shop(name: "Гиппо", image: "gippo", logo: "gippo_logo",  adresses:["Минск, пр-т Рокоссовского 2",
                             "Минск, ул. Горецкого 2",
                             "Минск, ул. Городецкая 30",
                             "Минск, Игуменский тракт 30",
@@ -24,15 +25,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                             "Минск, ул. Жуковского 3",
                             "Минск, ул. Червякова 57",
                             "Минск, пр-т Партизанский 150А"]),
-                        Shop(name: "Евроопт", image: "euroopt", logo: "euroopt_logo", url: "http://evroopt.by/tovary-v-magazinah-evroopt", adresses: ["г. Минск, ул. Казинца, 52A",
+                        Shop(name: "Евроопт", image: "euroopt", logo: "euroopt_logo",  adresses: ["г. Минск, ул. Казинца, 52A",
                             "г. Минск, пр. Независимости, 48",
                             "г. Минск, ул. Алибегова, 13 корп. 1",
                             "г. Минск, ул. Рафиева, 27"]),
-                        Shop(name: "Корона", image: "korona", logo: "korona_logo", url: "http://www.korona.by/minsk/gipper/actions/", adresses: ["г. Минск, ул. Кальварийская, 24",
-                            "г. Минск, ул. Корженевского, 26",
-                            "г. Минск, пр-т. Независимости, 154",
-                            "г. Минск, пр-т Победителей, 65"]),
-                        Shop(name: "Рублевский", image: "rublevski", logo: "rublevski_logo", url: "http://www.rublevski.by/images/phocagallery/action.pdf", adresses: ["г. Минск, 2-й переулок Багаратиона 18а",
+                    //  Shop(name: "Корона", image: "korona", logo: "korona_logo",  adresses: ["г. Минск, ул. Кальварийская, 24",
+                    //        "г. Минск, ул. Корженевского, 26",
+                    //       "г. Минск, пр-т. Независимости, 154",
+                    //      "г. Минск, пр-т Победителей, 65"]),
+                        Shop(name: "Рублевский", image: "rublevski", logo: "rublevski_logo",  adresses: ["г. Минск, 2-й переулок Багаратиона 18а",
                             "г. Минск, Б. Шевченко, 18",
                             "г. Минск, Логойский тракт, 33",
                             "г. Минск, пр-т Газеты “Звезда”, 16/1-2",
@@ -47,6 +48,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                             "г. Минск, ул. Алтайская, 66а",
                             "г. Минск, ул. Брикета, 2",
                             "г. Минск, ул. Водолажского, 6"]),
+                        Shop(name: "ProStore", image: "prostore", logo: "prostore_logo", adresses: ["г. Минск, ул. Каменногорская, 3",
+                            "г. Минск, пр. Победителей, 84",
+                            "г. Минск, пр. Дзержинского, 126",
+                            "г. Минск, пр. Партизанский, 182",
+                            "г. Минск, ул. Уборевича, 176"
+                            ]),
+                        Shop(name: "Соседи", image: "sosedi", logo: "sosedi_logo", adresses: ["г. Минск, Долгиновский тр-т, 178",
+                            "г. Минск, ул. В.Хоружей, 17",
+                            "г. Минск, ул. Дунина-Марцинкевича, 11"
+                            ])
                         ]
     
     override func viewDidLoad() {

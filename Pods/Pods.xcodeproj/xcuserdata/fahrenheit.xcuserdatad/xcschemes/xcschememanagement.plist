@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ARSLineProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LMGeocoder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EFC817632FD0E62EB1F9E547BE4E63A</key>
+		<key>BF7493D8461B38FAFB0814FC48AABCB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C96F67D033B8F888FD133C8234349B95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
