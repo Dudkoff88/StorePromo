@@ -57,7 +57,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                         Shop(name: "Соседи", image: "sosedi", logo: "sosedi_logo", adresses: ["г. Минск, Долгиновский тр-т, 178",
                             "г. Минск, ул. В.Хоружей, 17",
                             "г. Минск, ул. Дунина-Марцинкевича, 11"
-                            ])
+                            ]),
+                        Shop(name: "Белмаркет", image: "belmarket", logo: "belmarket_logo", adresses: ["г.Минск, 2-й Велосипедный переулок, 32",
+                            "г.Минск, Колодищи, ул.Минская,5",
+                            "г.Минск, ул. Варвашени, 1",
+                            "г.Минск, ул. Героев 120-й Дивизии, 21"])
+        
                         ]
     
     override func viewDidLoad() {
