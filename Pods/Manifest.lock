@@ -1,5 +1,6 @@
 PODS:
   - ARSLineProgress (1.2.1)
+  - CFAlertViewController (1.0.9)
   - Firebase/AdMob (3.5.2):
     - Firebase/Analytics
     - Google-Mobile-Ads-SDK (= 7.10.1)
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - ARSLineProgress (~> 1.0)
+  - CFAlertViewController
   - Firebase/AdMob
   - Firebase/Core
   - Firebase/Storage
@@ -44,6 +46,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ARSLineProgress: 6761482b13a0b0b8723fe25e0117cdc543f46ff8
+  CFAlertViewController: 6af833e847d697c122e767e5ae45cb4e0baf2325
   Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
   FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
@@ -56,6 +59,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   LMGeocoder: 7682148ce0bc55e483ceaa0eefdae4494d7102be
 
-PODFILE CHECKSUM: 9cb4282cc4c1806e391428b21d39d318470bfc02
+PODFILE CHECKSUM: cfc5cd7857913eede23ac65c79ce9e9d4b90a4c4
 
 COCOAPODS: 1.0.1

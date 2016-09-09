@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CFAlertViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LMGeocoder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C96F67D033B8F888FD133C8234349B95</key>
+		<key>ECB6D90C6766CFCA9E67587BC56D6FA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD618566FBA5BF94888D7C3E6DCAC6C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

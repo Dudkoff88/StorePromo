@@ -9,6 +9,7 @@ target 'StorePromo' do
   pod ‘GoogleMaps’
   pod 'LMGeocoder', '~> 1.0'
   pod 'ARSLineProgress', '~> 1.0'
+  pod 'CFAlertViewController'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
   pod 'Firebase/Storage’	

@@ -7,85 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		129D9CC4526376EF799CF63BE02E6787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1560199336D42AA8086F640D53FF905F /* Pods-StorePromo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013AF3BCCB6FDCEBB639D5C1B110E81B /* Pods-StorePromo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		234F3EA8F13990BF82038BDAFCC462A1 /* LMGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5850D145175C4581BA02D278F922262E /* LMGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40282D0E0E7F94F437095C0BB0D02721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		567B7836B027C371B055A2D675047A2D /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = F51CCDBA3C5F19A31738D20D56E4DA81 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D36A358456AF25585F37E8DEF5C81AB /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A72CAE670593EE6D9E5F136F5CB47B /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		611955471FA43CFE024285F61E9CDDB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		8299AF72AC6FBCBA1A74273C1D0B33F6 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB13609786D436EC03B621F18722E80 /* LMGeocoder.m */; };
-		A0D02904DBBB8310A8FB0CBB4FC4C29B /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D50270B2BCF0D9F48BDB858B1C6DF3 /* LMAddress.m */; };
-		AA0005A3E9A3A514ADFB34F9E534B043 /* ARSLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BA79B86B99328A8EBD6B9030D25727 /* ARSLineProgress.swift */; };
-		B0937A78A153942B134624F779DA5762 /* LMGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A19FDE9E9C2CBEA01A9FAE7FA346F5 /* LMGeocoder-dummy.m */; };
-		DDD5D3D05708B975ADC9A330585CC346 /* ARSLineProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E50EC3970E42C357745B0445C29C15 /* ARSLineProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E289A1F02756072D5517004DF7CB122A /* Pods-StorePromo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC85E4AAF7E9FA68437C0DE23AC4D6B /* Pods-StorePromo-dummy.m */; };
-		E91726B4A50D4E1E45B21BE7DFF7F049 /* ARSLineProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E15DF47D3FB68851F1AB7DE10F85807A /* ARSLineProgress-dummy.m */; };
+		046C5BD9E7BC62AF3B2321E9475A2B7F /* CFAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C486B54A042DCEEDCA247E199A6C9F1C /* CFAlertViewController-dummy.m */; };
+		0E5EE7B2156C5613AEF1E45776AF7E76 /* CFAlertTitleSubtitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E254F6F25BE9141A45C61CDFB7E8893B /* CFAlertTitleSubtitleTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		129D9CC4526376EF799CF63BE02E6787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		234F3EA8F13990BF82038BDAFCC462A1 /* LMGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCC6F7BBB64FDC7A8DB0B29C6584F43 /* LMGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2626AC02EA943518C76F9E5C41E12E8C /* CFAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2745D6770832AF34A20450CBB3A6400 /* CFAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		326031CFE63547375AD71A9958C230D8 /* CFAlertTitleSubtitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DFB237D3DCAD3446FC1B97A7592B2F /* CFAlertTitleSubtitleTableViewCell.m */; };
+		567B7836B027C371B055A2D675047A2D /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 57888594AED52C62BF65641023E19125 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D36A358456AF25585F37E8DEF5C81AB /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 59774BFEB7474D583FE2D0A46B8720F9 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6EE84D1B8916FDC116D2A87B8672B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		611955471FA43CFE024285F61E9CDDB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		6E8EB9E0DF65BB34CB0FB3D215D57746 /* CFAlertActionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D73486943F6B7DDE80EEACFC845F38 /* CFAlertActionTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7917E37FF381CEF286EBE52BBB891701 /* CFAlertViewControllerActionSheetTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BCF15B6525224FA2DC9068D64B195F /* CFAlertViewControllerActionSheetTransition.m */; };
+		8299AF72AC6FBCBA1A74273C1D0B33F6 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F39143AF5A015F03E9DEA2D71E622A11 /* LMGeocoder.m */; };
+		83F3BB834C245CC0EE27A28F5636A5DB /* Pods-StorePromo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC85E4AAF7E9FA68437C0DE23AC4D6B /* Pods-StorePromo-dummy.m */; };
+		8EA8C6CB0C339143F286D6FDC0A95BFA /* CFAlertViewControllerPopupTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B500715E40476328D4A5A8BB9DFC7756 /* CFAlertViewControllerPopupTransition.m */; };
+		9D19EB04F8B7E62CC3BA4E8EB6C903A7 /* CFAlertActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9296DBD6C13CA6E1A9F7202A06045317 /* CFAlertActionTableViewCell.xib */; };
+		A0D02904DBBB8310A8FB0CBB4FC4C29B /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19EC24433E969C2E1DFBA054C3410C /* LMAddress.m */; };
+		A8F646D53A1BBD69A8ACA75207860CEA /* CFAlertActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434EC1A2EEDBD08752A4C8326214D4A /* CFAlertActionTableViewCell.m */; };
+		AA0005A3E9A3A514ADFB34F9E534B043 /* ARSLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F6511504E6D3ABBA6044F919FFB53 /* ARSLineProgress.swift */; };
+		AF63A87B58F8B717F897A246E331A9D9 /* CFAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DB22843EADC02BAB0BCFD139B1E37B /* CFAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0937A78A153942B134624F779DA5762 /* LMGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C33FCB5CB26C4E5D99BE6302F146AB /* LMGeocoder-dummy.m */; };
+		B785C6E9DFD681D2FB51CE0F69CDA321 /* CFAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C908D18BF40BA8FF8F2A1C5A116B1E /* CFAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3532F0A861CB96AE8D8EFC5924C4357 /* CFAlertViewControllerActionSheetTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = A560BBC3DBF6FF0D04A5FD7555B29438 /* CFAlertViewControllerActionSheetTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D5BE2BBD6053A6E0178239DD4CF455 /* CFPushButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E1FA8F21C4A56C693379277C9A6D69 /* CFPushButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDA716F0497CEA0ADCBB239C7AA4C10 /* CFAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C696E3F73553AF5069E81A1EAEDAAF2 /* CFAlertViewController.xib */; };
+		DC7153A155022B8CC26F320ED58AF4F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		DDD5D3D05708B975ADC9A330585CC346 /* ARSLineProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A8EBDCEE18EB76399D1A58BD060C131 /* ARSLineProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91726B4A50D4E1E45B21BE7DFF7F049 /* ARSLineProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF249995303BBF27C3DCAAD911CC24C /* ARSLineProgress-dummy.m */; };
+		EA67D902451DFC55D60F71D325DE3EA5 /* CFAlertViewControllerPopupTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4050124EEEC6D77BE75A541C2D0E1036 /* CFAlertViewControllerPopupTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0C9567240B1D40D0881E19C2B20DE44 /* CFAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA05810957293D56A45298B8335B0A7 /* CFAlertAction.m */; };
+		F25BDAAB6A5DB82E5418DEE089894813 /* Pods-StorePromo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013AF3BCCB6FDCEBB639D5C1B110E81B /* Pods-StorePromo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5DFD8C756FC09D161C5F98A794FCAE6 /* CFAlertTitleSubtitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F76FDF85920CCEE7E8ADFC94CA066 /* CFAlertTitleSubtitleTableViewCell.xib */; };
+		F94C2AF8D468B0C241220FB21E3646AA /* CFPushButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EB24E33EE2A246AB317B7662BA5B4C /* CFPushButton.m */; };
+		FB11D053A6686A4FB3B83FAA2B82D562 /* CFAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF58814DC5447A23560EE523D255 /* CFAlertViewController.m */; };
+		FE074EAA95E470AF5172D10F74F848F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6F4AAC4B4A3F6E624B7ECCFBD7D5CE8E /* PBXContainerItemProxy */ = {
+		3DBCF6D0545FF83ED192F8C1A791A83B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BF7493D8461B38FAFB0814FC48AABCB8;
 			remoteInfo = ARSLineProgress;
 		};
-		E9DA9342AE1D0F680558E3C76CE68F75 /* PBXContainerItemProxy */ = {
+		52A45E3CE8F16AABB3AD374366B4969F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4EB55D641C2BF865737A72BD89A4C973;
 			remoteInfo = LMGeocoder;
 		};
+		7F99EAA579B464E83C01188562597C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECB6D90C6766CFCA9E67587BC56D6FA5;
+			remoteInfo = CFAlertViewController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013303F030403E0B7429E34A1E1E1AA9 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		013AF3BCCB6FDCEBB639D5C1B110E81B /* Pods-StorePromo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StorePromo-umbrella.h"; sourceTree = "<group>"; };
-		02151B735E84AD7181779A974612FC13 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		06A72CAE670593EE6D9E5F136F5CB47B /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoder/LMGeocoder.h; sourceTree = "<group>"; };
-		06E5C81F05EA699B9D9647E8DFE3093E /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		072E3FBC0C610B7DF38C0CE4D86A576A /* Pods-StorePromo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StorePromo-acknowledgements.plist"; sourceTree = "<group>"; };
 		0BC8D0645506F21B1D63622C5D2FB0E4 /* Pods-StorePromo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StorePromo.modulemap"; sourceTree = "<group>"; };
-		15BF37DC087CFE76DB8D3F9A2CF34FBD /* ARSLineProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARSLineProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15E50EC3970E42C357745B0445C29C15 /* ARSLineProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-umbrella.h"; sourceTree = "<group>"; };
+		1995040B73595450B52E93DAFF48C362 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		199919D26B934DC56F5A4C5A1E1F55AF /* Pods-StorePromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorePromo.release.xcconfig"; sourceTree = "<group>"; };
-		1D9BB14DAB95C0E81AEA7B37DB56D331 /* LMGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMGeocoder.xcconfig; sourceTree = "<group>"; };
-		2218AA6A34E444F9407ADCD5C008117B /* ARSLineProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARSLineProgress.xcconfig; sourceTree = "<group>"; };
-		22BA79B86B99328A8EBD6B9030D25727 /* ARSLineProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARSLineProgress.swift; path = Source/ARSLineProgress.swift; sourceTree = "<group>"; };
-		3DF217D8B986C3B6DB9F410845A2D1E2 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		3EADF40013B4F4611DD514ABDB6607D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		418EC4FB4BB1E37DC94DF293459A65D2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		4469703C4DFB2AE579232DA716BD8A33 /* Pods_StorePromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorePromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B437442E0671EB6E4B9776EED0FCB04 /* LMGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-prefix.pch"; sourceTree = "<group>"; };
-		53D50270B2BCF0D9F48BDB858B1C6DF3 /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoder/LMAddress.m; sourceTree = "<group>"; };
-		54A0812D255E9EF1D6722CCC1FDF6AAD /* LMGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5850D145175C4581BA02D278F922262E /* LMGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-umbrella.h"; sourceTree = "<group>"; };
-		5A6AE6E8A31FEDBAD09CA8D40E414CF0 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
-		5CBE40FEAE1F3FCDC1A5A78A13E35095 /* ARSLineProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-prefix.pch"; sourceTree = "<group>"; };
-		71A19FDE9E9C2CBEA01A9FAE7FA346F5 /* LMGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoder-dummy.m"; sourceTree = "<group>"; };
-		734C62422B13D91FF76BA233EF425741 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		76FA96F50F1CB94203C3278004278577 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		797A300873A70859AC7E523A0892F4F2 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		20E98A6E00452CFC0DBEE8EFF813FDCC /* ARSLineProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ARSLineProgress.modulemap; sourceTree = "<group>"; };
+		2703927D006C0F005EEF88E513F15558 /* CFAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CFAlertViewController.xcconfig; sourceTree = "<group>"; };
+		2B855CC2B8F6A9C1DDC712B75A6BEA84 /* Pods_StorePromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorePromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C696E3F73553AF5069E81A1EAEDAAF2 /* CFAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CFAlertViewController.xib; path = CFAlertViewController/CFAlertViewController.xib; sourceTree = "<group>"; };
+		2F1F76FDF85920CCEE7E8ADFC94CA066 /* CFAlertTitleSubtitleTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CFAlertTitleSubtitleTableViewCell.xib; path = CFAlertViewController/Cells/CFAlertTitleSubtitleTableViewCell.xib; sourceTree = "<group>"; };
+		312C5AECCB5A13D1ED6F41D902EDAA40 /* LMGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DB22843EADC02BAB0BCFD139B1E37B /* CFAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertViewController.h; path = CFAlertViewController/CFAlertViewController.h; sourceTree = "<group>"; };
+		3BF249995303BBF27C3DCAAD911CC24C /* ARSLineProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARSLineProgress-dummy.m"; sourceTree = "<group>"; };
+		4050124EEEC6D77BE75A541C2D0E1036 /* CFAlertViewControllerPopupTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertViewControllerPopupTransition.h; path = CFAlertViewController/Transitions/CFAlertViewControllerPopupTransition.h; sourceTree = "<group>"; };
+		42967379536C28B2C7E1C8EFEFC25C3F /* CFAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CFAlertViewController.modulemap; sourceTree = "<group>"; };
+		532ACC38F3E55BC00DB427FBC614B250 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		540C82C345A4EDE4760FF14C38C2F591 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C33FCB5CB26C4E5D99BE6302F146AB /* LMGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoder-dummy.m"; sourceTree = "<group>"; };
+		57888594AED52C62BF65641023E19125 /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoder/LMAddress.h; sourceTree = "<group>"; };
+		59774BFEB7474D583FE2D0A46B8720F9 /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoder/LMGeocoder.h; sourceTree = "<group>"; };
+		5A1791FBAB62EEA77A67C12F0957FB11 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		5A8EBDCEE18EB76399D1A58BD060C131 /* ARSLineProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-umbrella.h"; sourceTree = "<group>"; };
+		5CCC6F7BBB64FDC7A8DB0B29C6584F43 /* LMGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-umbrella.h"; sourceTree = "<group>"; };
+		5F19EC24433E969C2E1DFBA054C3410C /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoder/LMAddress.m; sourceTree = "<group>"; };
+		61C908D18BF40BA8FF8F2A1C5A116B1E /* CFAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertAction.h; path = CFAlertViewController/Models/CFAlertAction.h; sourceTree = "<group>"; };
+		62D73486943F6B7DDE80EEACFC845F38 /* CFAlertActionTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertActionTableViewCell.h; path = CFAlertViewController/Cells/CFAlertActionTableViewCell.h; sourceTree = "<group>"; };
+		6BD29666495DF47D6ED59EA0505E22E1 /* LMGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-prefix.pch"; sourceTree = "<group>"; };
+		6F0318FE2577F768A60536560080E53C /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		70A3179E43B64BC527D6909E6C4782ED /* ARSLineProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARSLineProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		725BAF58814DC5447A23560EE523D255 /* CFAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertViewController.m; path = CFAlertViewController/CFAlertViewController.m; sourceTree = "<group>"; };
+		7434EC1A2EEDBD08752A4C8326214D4A /* CFAlertActionTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertActionTableViewCell.m; path = CFAlertViewController/Cells/CFAlertActionTableViewCell.m; sourceTree = "<group>"; };
+		74EB24E33EE2A246AB317B7662BA5B4C /* CFPushButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFPushButton.m; path = CFAlertViewController/Subclass/CRPushButton/CFPushButton.m; sourceTree = "<group>"; };
+		7EB717717392C8A1D474985202C0A9C2 /* CFAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CFAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BCF15B6525224FA2DC9068D64B195F /* CFAlertViewControllerActionSheetTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertViewControllerActionSheetTransition.m; path = CFAlertViewController/Transitions/CFAlertViewControllerActionSheetTransition.m; sourceTree = "<group>"; };
+		8741C6DE232BB1D5BAF5F7E979DD0E3C /* ARSLineProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-prefix.pch"; sourceTree = "<group>"; };
+		8A5F6511504E6D3ABBA6044F919FFB53 /* ARSLineProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARSLineProgress.swift; path = Source/ARSLineProgress.swift; sourceTree = "<group>"; };
 		8ABBB5B2747422F35E31ABD3E6D683D1 /* Pods-StorePromo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorePromo.debug.xcconfig"; sourceTree = "<group>"; };
-		9316E67822128DB432EAFB474D27E362 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		9296DBD6C13CA6E1A9F7202A06045317 /* CFAlertActionTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CFAlertActionTableViewCell.xib; path = CFAlertViewController/Cells/CFAlertActionTableViewCell.xib; sourceTree = "<group>"; };
+		92F772FA17BD095D600EDA4C1C144B6A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94851751D2FFAECED1AFC1A8F831E700 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
-		9D84728EF470EE7F6CB60A8A68EAC66F /* ARSLineProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ARSLineProgress.modulemap; sourceTree = "<group>"; };
-		C4A36765411BB31DCC4EB91F8C6E2D66 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D143E699AFB93A6D3E48DB07625D1242 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		DF49224DCBD1C73F316A397A8FA05ADE /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		E15DF47D3FB68851F1AB7DE10F85807A /* ARSLineProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARSLineProgress-dummy.m"; sourceTree = "<group>"; };
-		E7C83209F90CD92870BA904BBFE4F637 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		9AE031D26E4AE6625C9BB3DB11B7A1FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A560BBC3DBF6FF0D04A5FD7555B29438 /* CFAlertViewControllerActionSheetTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertViewControllerActionSheetTransition.h; path = CFAlertViewController/Transitions/CFAlertViewControllerActionSheetTransition.h; sourceTree = "<group>"; };
+		A67C42D712AB66C3B11F408A2CF9DD5B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		AB207BF8F92E44DCF7B15A4CC02E055B /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B500715E40476328D4A5A8BB9DFC7756 /* CFAlertViewControllerPopupTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertViewControllerPopupTransition.m; path = CFAlertViewController/Transitions/CFAlertViewControllerPopupTransition.m; sourceTree = "<group>"; };
+		B57EB31DA6CB3AB0970CBC79A64E26BF /* LMGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMGeocoder.xcconfig; sourceTree = "<group>"; };
+		BC80A17DDF9497D73E84F9C7EBF7E04B /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		C1C62C1DF1A1735D1EE370A126BAC10D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C486B54A042DCEEDCA247E199A6C9F1C /* CFAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CFAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		D2745D6770832AF34A20450CBB3A6400 /* CFAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFAlertViewController-umbrella.h"; sourceTree = "<group>"; };
+		D439C7A24B4854D21654CFC2BE405600 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		D9E1FA8F21C4A56C693379277C9A6D69 /* CFPushButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFPushButton.h; path = CFAlertViewController/Subclass/CRPushButton/CFPushButton.h; sourceTree = "<group>"; };
+		DEAB5F9B8614781EFCEDA7927B6C3AF3 /* ARSLineProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARSLineProgress.xcconfig; sourceTree = "<group>"; };
+		DF71E2C2BA71E3F32F8BB9CDF07638C0 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E1D1D84ACD47F264036892A0316B345A /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		E254F6F25BE9141A45C61CDFB7E8893B /* CFAlertTitleSubtitleTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFAlertTitleSubtitleTableViewCell.h; path = CFAlertViewController/Cells/CFAlertTitleSubtitleTableViewCell.h; sourceTree = "<group>"; };
+		E310F45C18D9B8ACE98360861CD8AF4C /* CFAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFAlertViewController-prefix.pch"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E8C82D242390374DD97128E72AAD5AAA /* Pods-StorePromo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorePromo-frameworks.sh"; sourceTree = "<group>"; };
 		EAD7C1B1F0AD3123160616FBD2BCB789 /* Pods-StorePromo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StorePromo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0BB121232728429020F79FBB2D6CB18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4DB64F8B50E9338124B855EF635627B /* LMGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LMGeocoder.modulemap; sourceTree = "<group>"; };
-		F51CCDBA3C5F19A31738D20D56E4DA81 /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoder/LMAddress.h; sourceTree = "<group>"; };
+		F25095F759277130C487B951C4DFD2C3 /* LMGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LMGeocoder.modulemap; sourceTree = "<group>"; };
+		F2DFB237D3DCAD3446FC1B97A7592B2F /* CFAlertTitleSubtitleTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertTitleSubtitleTableViewCell.m; path = CFAlertViewController/Cells/CFAlertTitleSubtitleTableViewCell.m; sourceTree = "<group>"; };
+		F39143AF5A015F03E9DEA2D71E622A11 /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoder/LMGeocoder.m; sourceTree = "<group>"; };
 		F75C66EB467ED4922CEE653A4521FBDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7ED57DB0BE1FE6A4AF6D324D6EA23DE /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		F9E13AB329AC4E5F7ABD6FF710C3721A /* Pods-StorePromo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorePromo-resources.sh"; sourceTree = "<group>"; };
-		FAB13609786D436EC03B621F18722E80 /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoder/LMGeocoder.m; sourceTree = "<group>"; };
+		FBA05810957293D56A45298B8335B0A7 /* CFAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFAlertAction.m; path = CFAlertViewController/Models/CFAlertAction.m; sourceTree = "<group>"; };
+		FF7CD1F565E05132E4B2D71793A569C3 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		FFC85E4AAF7E9FA68437C0DE23AC4D6B /* Pods-StorePromo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StorePromo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,19 +151,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B0BAE3031A2D72A8F1B22255A536D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE074EAA95E470AF5172D10F74F848F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524634D2E070FD9061FC49841B3F68AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6EE84D1B8916FDC116D2A87B8672B7 /* Foundation.framework in Frameworks */,
+				DC7153A155022B8CC26F320ED58AF4F4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8859067B97367B202D557C17C0C1E66C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				129D9CC4526376EF799CF63BE02E6787 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A336C64CBBA4E785EEA88779EE4D5BA3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40282D0E0E7F94F437095C0BB0D02721 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,26 +187,59 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1034145ACF5A991B63E6A492C6FC8663 /* GoogleUtilities */ = {
+		08ACB1042D3E6C58087126B4FC06DC8A /* FirebaseStorage */ = {
 			isa = PBXGroup;
 			children = (
-				5F72A1EB04861C7D5A5C929310E366AF /* Frameworks */,
+				FB4E20BF6308B1B5E0B8AD791529F340 /* Frameworks */,
 			);
-			path = GoogleUtilities;
+			path = FirebaseStorage;
 			sourceTree = "<group>";
 		};
-		103E03EFECB56700FFF030576B03D28C /* Frameworks */ = {
+		097DFA47D67C69664F1129D6DD8DEA2C /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				3DF217D8B986C3B6DB9F410845A2D1E2 /* GoogleInterchangeUtilities.framework */,
+				E1D1D84ACD47F264036892A0316B345A /* FIRInstanceID.h */,
+				EDCEF1BC0A56CECF55A69853A385C1C8 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		0A51C7B55E78F7E975875E035B39940B /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				74F616219D23D07988B34FB52638878F /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		0DB6786DCA2DA24F1DFF06A3A18386F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				532ACC38F3E55BC00DB427FBC614B250 /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		156CB24B591894B257C58A88176E890C /* Frameworks */ = {
+		0FB93B8E43DA6FF51D57149FF60CAD14 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				02151B735E84AD7181779A974612FC13 /* GoogleSymbolUtilities.framework */,
+				8950EC27D7B059189EC1E5F0F586BC01 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		19DCFE7B389798463FDD74E7724924D6 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1DDEB55D81968BA0848D317E2CD5F3E3 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		1DDEB55D81968BA0848D317E2CD5F3E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D439C7A24B4854D21654CFC2BE405600 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,124 +262,127 @@
 			path = "Target Support Files/Pods-StorePromo";
 			sourceTree = "<group>";
 		};
-		2BE6E7437000A638A947AB21A7E0AE87 /* FirebaseStorage */ = {
+		258B4E92BCA5009BB8F18EC1203A7CF9 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				7FB897DB25D376E521C2F72684420D7C /* Frameworks */,
-			);
-			path = FirebaseStorage;
-			sourceTree = "<group>";
-		};
-		2C109EA956B49036CDEBF3ECCBAFA9ED /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				94AD7C404736CB1E15BC75D9FC395804 /* Frameworks */,
-				E27F7C35F480082826504B4CA913FB7C /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		2D988326FD29349895BC55BCE50E4B8F /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				60AD79331034CAD136F7B5CAD9DF7BB0 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		2DEFEC222D0B8F4E411720DA85EA4066 /* ARSLineProgress */ = {
-			isa = PBXGroup;
-			children = (
-				22BA79B86B99328A8EBD6B9030D25727 /* ARSLineProgress.swift */,
-				7377A058A65D6F404CF4DA641B811F5D /* Support Files */,
-			);
-			path = ARSLineProgress;
-			sourceTree = "<group>";
-		};
-		2EDD5E668F2424421CFE33B1AC94685F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				418EC4FB4BB1E37DC94DF293459A65D2 /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		45A2DE1E573E074B483CE893D52D33BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C4A36765411BB31DCC4EB91F8C6E2D66 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BFED959F7048EA44BC2431CAFF0CE53 /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				94851751D2FFAECED1AFC1A8F831E700 /* FIRInstanceID.h */,
-				EB8E80A0987F416EDFDE5004FF76B004 /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		52232686B4063E4B741FD14A53BA7BCC /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				F3FDA3747B2BB9251FC5D8A238B7760C /* Base */,
-				2C109EA956B49036CDEBF3ECCBAFA9ED /* Maps */,
-			);
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		5F72A1EB04861C7D5A5C929310E366AF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D143E699AFB93A6D3E48DB07625D1242 /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5FF0CDD9494F5523B4660C517D1D54B4 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				103E03EFECB56700FFF030576B03D28C /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		60AD79331034CAD136F7B5CAD9DF7BB0 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				5A6AE6E8A31FEDBAD09CA8D40E414CF0 /* Firebase.h */,
+				013303F030403E0B7429E34A1E1E1AA9 /* Firebase.h */,
 			);
 			name = Analytics;
 			sourceTree = "<group>";
 		};
-		7377A058A65D6F404CF4DA641B811F5D /* Support Files */ = {
+		2F0507D49E1CC7D6A3AE268F8DAB31CE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9D84728EF470EE7F6CB60A8A68EAC66F /* ARSLineProgress.modulemap */,
-				2218AA6A34E444F9407ADCD5C008117B /* ARSLineProgress.xcconfig */,
-				E15DF47D3FB68851F1AB7DE10F85807A /* ARSLineProgress-dummy.m */,
-				5CBE40FEAE1F3FCDC1A5A78A13E35095 /* ARSLineProgress-prefix.pch */,
-				15E50EC3970E42C357745B0445C29C15 /* ARSLineProgress-umbrella.h */,
-				F0BB121232728429020F79FBB2D6CB18 /* Info.plist */,
+				42967379536C28B2C7E1C8EFEFC25C3F /* CFAlertViewController.modulemap */,
+				2703927D006C0F005EEF88E513F15558 /* CFAlertViewController.xcconfig */,
+				C486B54A042DCEEDCA247E199A6C9F1C /* CFAlertViewController-dummy.m */,
+				E310F45C18D9B8ACE98360861CD8AF4C /* CFAlertViewController-prefix.pch */,
+				D2745D6770832AF34A20450CBB3A6400 /* CFAlertViewController-umbrella.h */,
+				540C82C345A4EDE4760FF14C38C2F591 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CFAlertViewController";
+			sourceTree = "<group>";
+		};
+		33309D2B66D4CD8C7CD500A93FB47A9A /* CFAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61C908D18BF40BA8FF8F2A1C5A116B1E /* CFAlertAction.h */,
+				FBA05810957293D56A45298B8335B0A7 /* CFAlertAction.m */,
+				62D73486943F6B7DDE80EEACFC845F38 /* CFAlertActionTableViewCell.h */,
+				7434EC1A2EEDBD08752A4C8326214D4A /* CFAlertActionTableViewCell.m */,
+				E254F6F25BE9141A45C61CDFB7E8893B /* CFAlertTitleSubtitleTableViewCell.h */,
+				F2DFB237D3DCAD3446FC1B97A7592B2F /* CFAlertTitleSubtitleTableViewCell.m */,
+				37DB22843EADC02BAB0BCFD139B1E37B /* CFAlertViewController.h */,
+				725BAF58814DC5447A23560EE523D255 /* CFAlertViewController.m */,
+				A560BBC3DBF6FF0D04A5FD7555B29438 /* CFAlertViewControllerActionSheetTransition.h */,
+				83BCF15B6525224FA2DC9068D64B195F /* CFAlertViewControllerActionSheetTransition.m */,
+				4050124EEEC6D77BE75A541C2D0E1036 /* CFAlertViewControllerPopupTransition.h */,
+				B500715E40476328D4A5A8BB9DFC7756 /* CFAlertViewControllerPopupTransition.m */,
+				D9E1FA8F21C4A56C693379277C9A6D69 /* CFPushButton.h */,
+				74EB24E33EE2A246AB317B7662BA5B4C /* CFPushButton.m */,
+				6FFD3F92AECAB736F0DC685D7A431B72 /* Resources */,
+				2F0507D49E1CC7D6A3AE268F8DAB31CE /* Support Files */,
+			);
+			path = CFAlertViewController;
+			sourceTree = "<group>";
+		};
+		428C29E057A3EC715486E64F3A16EEDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				514A62EEF865CAC3FA465E3563793D2A /* ARSLineProgress */,
+				33309D2B66D4CD8C7CD500A93FB47A9A /* CFAlertViewController */,
+				90EE9A25CB9868959D0E4ED68B5D04A6 /* Firebase */,
+				0FB93B8E43DA6FF51D57149FF60CAD14 /* FirebaseAnalytics */,
+				097DFA47D67C69664F1129D6DD8DEA2C /* FirebaseInstanceID */,
+				08ACB1042D3E6C58087126B4FC06DC8A /* FirebaseStorage */,
+				F0D557E03CDF71A3B4C6D07C1505FCFD /* Google-Mobile-Ads-SDK */,
+				19DCFE7B389798463FDD74E7724924D6 /* GoogleInterchangeUtilities */,
+				F5E4152C9EB77D28E44D6C07B46DF0FA /* GoogleMaps */,
+				0A51C7B55E78F7E975875E035B39940B /* GoogleNetworkingUtilities */,
+				A73AFDA43555ACB71F3F4A7F30BE0DC6 /* GoogleSymbolUtilities */,
+				C1D54A663EF4B16E55A18D012C82BDBB /* GoogleUtilities */,
+				D3F01071BEFCDAD92ECD3339678E87C5 /* LMGeocoder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		514A62EEF865CAC3FA465E3563793D2A /* ARSLineProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8A5F6511504E6D3ABBA6044F919FFB53 /* ARSLineProgress.swift */,
+				6C4A4AD1AD140CECF9B942DEB603D749 /* Support Files */,
+			);
+			path = ARSLineProgress;
+			sourceTree = "<group>";
+		};
+		5F73EABFB574CBE5F00EFC39B4C5FA6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70A3179E43B64BC527D6909E6C4782ED /* ARSLineProgress.framework */,
+				7EB717717392C8A1D474985202C0A9C2 /* CFAlertViewController.framework */,
+				312C5AECCB5A13D1ED6F41D902EDAA40 /* LMGeocoder.framework */,
+				2B855CC2B8F6A9C1DDC712B75A6BEA84 /* Pods_StorePromo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C4A4AD1AD140CECF9B942DEB603D749 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20E98A6E00452CFC0DBEE8EFF813FDCC /* ARSLineProgress.modulemap */,
+				DEAB5F9B8614781EFCEDA7927B6C3AF3 /* ARSLineProgress.xcconfig */,
+				3BF249995303BBF27C3DCAAD911CC24C /* ARSLineProgress-dummy.m */,
+				8741C6DE232BB1D5BAF5F7E979DD0E3C /* ARSLineProgress-prefix.pch */,
+				5A8EBDCEE18EB76399D1A58BD060C131 /* ARSLineProgress-umbrella.h */,
+				C1C62C1DF1A1735D1EE370A126BAC10D /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ARSLineProgress";
 			sourceTree = "<group>";
 		};
-		7BE32A3718FAE2D41B99EB15EEC5C96A /* Frameworks */ = {
+		6FFD3F92AECAB736F0DC685D7A431B72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DF49224DCBD1C73F316A397A8FA05ADE /* FirebaseAnalytics.framework */,
+				9296DBD6C13CA6E1A9F7202A06045317 /* CFAlertActionTableViewCell.xib */,
+				2F1F76FDF85920CCEE7E8ADFC94CA066 /* CFAlertTitleSubtitleTableViewCell.xib */,
+				2C696E3F73553AF5069E81A1EAEDAAF2 /* CFAlertViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		74F616219D23D07988B34FB52638878F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F0318FE2577F768A60536560080E53C /* GoogleNetworkingUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -293,153 +391,167 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				82B67EBC1BD06BCDE0CC67FB7337BFE7 /* Pods */,
-				C40A6B3FDCC81B7D8BA40DBF516D4629 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				428C29E057A3EC715486E64F3A16EEDC /* Pods */,
+				5F73EABFB574CBE5F00EFC39B4C5FA6D /* Products */,
 				0514D870624E05741AEBCC41E83B845D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FB897DB25D376E521C2F72684420D7C /* Frameworks */ = {
+		888D1333283AD6E7BAE6D3EB570AC776 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				797A300873A70859AC7E523A0892F4F2 /* FirebaseStorage.framework */,
+				EB940DB30339CC70B917460B3207B40A /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		8950EC27D7B059189EC1E5F0F586BC01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A1791FBAB62EEA77A67C12F0957FB11 /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		82B67EBC1BD06BCDE0CC67FB7337BFE7 /* Pods */ = {
+		90EE9A25CB9868959D0E4ED68B5D04A6 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				2DEFEC222D0B8F4E411720DA85EA4066 /* ARSLineProgress */,
-				2D988326FD29349895BC55BCE50E4B8F /* Firebase */,
-				CCC5BC3C2BAC22EE02D72F19E24697E2 /* FirebaseAnalytics */,
-				4BFED959F7048EA44BC2431CAFF0CE53 /* FirebaseInstanceID */,
-				2BE6E7437000A638A947AB21A7E0AE87 /* FirebaseStorage */,
-				8C87C0917D15C2BF0BA4831C9FA7167F /* Google-Mobile-Ads-SDK */,
-				5FF0CDD9494F5523B4660C517D1D54B4 /* GoogleInterchangeUtilities */,
-				52232686B4063E4B741FD14A53BA7BCC /* GoogleMaps */,
-				CBB4BA9F29D71166684D87405A4540DE /* GoogleNetworkingUtilities */,
-				9E7F24C644ABB0EF32CA471DD30C2A97 /* GoogleSymbolUtilities */,
-				1034145ACF5A991B63E6A492C6FC8663 /* GoogleUtilities */,
-				B3B3318B577DAB0E8F741C4F716E37BC /* LMGeocoder */,
+				258B4E92BCA5009BB8F18EC1203A7CF9 /* Analytics */,
 			);
-			name = Pods;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		8C87C0917D15C2BF0BA4831C9FA7167F /* Google-Mobile-Ads-SDK */ = {
+		943E70D5FA137D23D89A8F2180C66885 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EDD5E668F2424421CFE33B1AC94685F /* Frameworks */,
-			);
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		94AD7C404736CB1E15BC75D9FC395804 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				76FA96F50F1CB94203C3278004278577 /* GoogleMaps.framework */,
-				E7C83209F90CD92870BA904BBFE4F637 /* GoogleMapsCore.framework */,
+				1995040B73595450B52E93DAFF48C362 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9E7F24C644ABB0EF32CA471DD30C2A97 /* GoogleSymbolUtilities */ = {
+		A73AFDA43555ACB71F3F4A7F30BE0DC6 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				156CB24B591894B257C58A88176E890C /* Frameworks */,
+				0DB6786DCA2DA24F1DFF06A3A18386F6 /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		A9E650DECC63919DD973FDF7BD4A4AA8 /* Support Files */ = {
+		AC24A8F6A387106AE1E1611D32DF748D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EADF40013B4F4611DD514ABDB6607D9 /* Info.plist */,
-				F4DB64F8B50E9338124B855EF635627B /* LMGeocoder.modulemap */,
-				1D9BB14DAB95C0E81AEA7B37DB56D331 /* LMGeocoder.xcconfig */,
-				71A19FDE9E9C2CBEA01A9FAE7FA346F5 /* LMGeocoder-dummy.m */,
-				4B437442E0671EB6E4B9776EED0FCB04 /* LMGeocoder-prefix.pch */,
-				5850D145175C4581BA02D278F922262E /* LMGeocoder-umbrella.h */,
+				A67C42D712AB66C3B11F408A2CF9DD5B /* GoogleMaps.framework */,
+				FF7CD1F565E05132E4B2D71793A569C3 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0E549B604DDCE432C91BC3CD4420381 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE031D26E4AE6625C9BB3DB11B7A1FF /* Info.plist */,
+				F25095F759277130C487B951C4DFD2C3 /* LMGeocoder.modulemap */,
+				B57EB31DA6CB3AB0970CBC79A64E26BF /* LMGeocoder.xcconfig */,
+				56C33FCB5CB26C4E5D99BE6302F146AB /* LMGeocoder-dummy.m */,
+				6BD29666495DF47D6ED59EA0505E22E1 /* LMGeocoder-prefix.pch */,
+				5CCC6F7BBB64FDC7A8DB0B29C6584F43 /* LMGeocoder-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LMGeocoder";
 			sourceTree = "<group>";
 		};
-		B3B3318B577DAB0E8F741C4F716E37BC /* LMGeocoder */ = {
+		C1D54A663EF4B16E55A18D012C82BDBB /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				F51CCDBA3C5F19A31738D20D56E4DA81 /* LMAddress.h */,
-				53D50270B2BCF0D9F48BDB858B1C6DF3 /* LMAddress.m */,
-				06A72CAE670593EE6D9E5F136F5CB47B /* LMGeocoder.h */,
-				FAB13609786D436EC03B621F18722E80 /* LMGeocoder.m */,
-				A9E650DECC63919DD973FDF7BD4A4AA8 /* Support Files */,
+				943E70D5FA137D23D89A8F2180C66885 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		D3F01071BEFCDAD92ECD3339678E87C5 /* LMGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				57888594AED52C62BF65641023E19125 /* LMAddress.h */,
+				5F19EC24433E969C2E1DFBA054C3410C /* LMAddress.m */,
+				59774BFEB7474D583FE2D0A46B8720F9 /* LMGeocoder.h */,
+				F39143AF5A015F03E9DEA2D71E622A11 /* LMGeocoder.m */,
+				B0E549B604DDCE432C91BC3CD4420381 /* Support Files */,
 			);
 			path = LMGeocoder;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		E9A87CAFB2BC6F77E02C93E57346340E /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				AC24A8F6A387106AE1E1611D32DF748D /* Frameworks */,
+				FA89D117B8EBB28FB4B64031B51CEDFB /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		EAF0C7F83A6BA5264DE5D1046768E3A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92F772FA17BD095D600EDA4C1C144B6A /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C40A6B3FDCC81B7D8BA40DBF516D4629 /* Products */ = {
+		EB940DB30339CC70B917460B3207B40A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15BF37DC087CFE76DB8D3F9A2CF34FBD /* ARSLineProgress.framework */,
-				54A0812D255E9EF1D6722CCC1FDF6AAD /* LMGeocoder.framework */,
-				4469703C4DFB2AE579232DA716BD8A33 /* Pods_StorePromo.framework */,
+				DF71E2C2BA71E3F32F8BB9CDF07638C0 /* GoogleMapsBase.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CBB4BA9F29D71166684D87405A4540DE /* GoogleNetworkingUtilities */ = {
+		EDCEF1BC0A56CECF55A69853A385C1C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDBD68B8E15D414B809B2FEB6673A62E /* Frameworks */,
+				F7ED57DB0BE1FE6A4AF6D324D6EA23DE /* FirebaseInstanceID.framework */,
 			);
-			path = GoogleNetworkingUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCC5BC3C2BAC22EE02D72F19E24697E2 /* FirebaseAnalytics */ = {
+		F0D557E03CDF71A3B4C6D07C1505FCFD /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				7BE32A3718FAE2D41B99EB15EEC5C96A /* Frameworks */,
+				EAF0C7F83A6BA5264DE5D1046768E3A2 /* Frameworks */,
 			);
-			path = FirebaseAnalytics;
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		E27F7C35F480082826504B4CA913FB7C /* Resources */ = {
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				734C62422B13D91FF76BA233EF425741 /* GoogleMaps.bundle */,
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5E4152C9EB77D28E44D6C07B46DF0FA /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				888D1333283AD6E7BAE6D3EB570AC776 /* Base */,
+				E9A87CAFB2BC6F77E02C93E57346340E /* Maps */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		FA89D117B8EBB28FB4B64031B51CEDFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB207BF8F92E44DCF7B15A4CC02E055B /* GoogleMaps.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		EB8E80A0987F416EDFDE5004FF76B004 /* Frameworks */ = {
+		FB4E20BF6308B1B5E0B8AD791529F340 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06E5C81F05EA699B9D9647E8DFE3093E /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3FDA3747B2BB9251FC5D8A238B7760C /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				45A2DE1E573E074B483CE893D52D33BB /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		FDBD68B8E15D414B809B2FEB6673A62E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9316E67822128DB432EAFB474D27E362 /* GoogleNetworkingUtilities.framework */,
+				BC80A17DDF9497D73E84F9C7EBF7E04B /* FirebaseStorage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -447,6 +559,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		26F47A553F47DB8B4135B9CBBAAD7466 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25BDAAB6A5DB82E5418DEE089894813 /* Pods-StorePromo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6724D658AEC98481E74652127C3464EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B785C6E9DFD681D2FB51CE0F69CDA321 /* CFAlertAction.h in Headers */,
+				6E8EB9E0DF65BB34CB0FB3D215D57746 /* CFAlertActionTableViewCell.h in Headers */,
+				0E5EE7B2156C5613AEF1E45776AF7E76 /* CFAlertTitleSubtitleTableViewCell.h in Headers */,
+				2626AC02EA943518C76F9E5C41E12E8C /* CFAlertViewController-umbrella.h in Headers */,
+				AF63A87B58F8B717F897A246E331A9D9 /* CFAlertViewController.h in Headers */,
+				C3532F0A861CB96AE8D8EFC5924C4357 /* CFAlertViewControllerActionSheetTransition.h in Headers */,
+				EA67D902451DFC55D60F71D325DE3EA5 /* CFAlertViewControllerPopupTransition.h in Headers */,
+				D4D5BE2BBD6053A6E0178239DD4CF455 /* CFPushButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA20726DCD0C55A385D882CD66A80F06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,14 +597,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD5D3D05708B975ADC9A330585CC346 /* ARSLineProgress-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4F0CACA4E357AF0CF71D243EDD269E9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1560199336D42AA8086F640D53FF905F /* Pods-StorePromo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +617,7 @@
 			);
 			name = LMGeocoder;
 			productName = LMGeocoder;
-			productReference = 54A0812D255E9EF1D6722CCC1FDF6AAD /* LMGeocoder.framework */;
+			productReference = 312C5AECCB5A13D1ED6F41D902EDAA40 /* LMGeocoder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */ = {
@@ -507,26 +634,45 @@
 			);
 			name = ARSLineProgress;
 			productName = ARSLineProgress;
-			productReference = 15BF37DC087CFE76DB8D3F9A2CF34FBD /* ARSLineProgress.framework */;
+			productReference = 70A3179E43B64BC527D6909E6C4782ED /* ARSLineProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C96F67D033B8F888FD133C8234349B95 /* Pods-StorePromo */ = {
+		ECB6D90C6766CFCA9E67587BC56D6FA5 /* CFAlertViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09DE5B0AB68E73D0B5D4E2F5AD1990DC /* Build configuration list for PBXNativeTarget "Pods-StorePromo" */;
+			buildConfigurationList = CE6A56E2B56564207D5F1F0243A46EA2 /* Build configuration list for PBXNativeTarget "CFAlertViewController" */;
 			buildPhases = (
-				892A1331C450B9B50E2790E75EB6392D /* Sources */,
-				A336C64CBBA4E785EEA88779EE4D5BA3 /* Frameworks */,
-				F4F0CACA4E357AF0CF71D243EDD269E9 /* Headers */,
+				5623CFD72E48B37CD900E80BA3E6AA70 /* Sources */,
+				524634D2E070FD9061FC49841B3F68AF /* Frameworks */,
+				6724D658AEC98481E74652127C3464EB /* Headers */,
+				03D6FE9E26C116878739221D12E6B831 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7194554094526C44168988BD7A80C72D /* PBXTargetDependency */,
-				09CD3A8C2A156A040161940B54C8F423 /* PBXTargetDependency */,
+			);
+			name = CFAlertViewController;
+			productName = CFAlertViewController;
+			productReference = 7EB717717392C8A1D474985202C0A9C2 /* CFAlertViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD618566FBA5BF94888D7C3E6DCAC6C3 /* Pods-StorePromo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB22638045F4D49A89C405E3D2B15E94 /* Build configuration list for PBXNativeTarget "Pods-StorePromo" */;
+			buildPhases = (
+				447B59C6AC7112CDF87C464B24793575 /* Sources */,
+				3B0BAE3031A2D72A8F1B22255A536D8B /* Frameworks */,
+				26F47A553F47DB8B4135B9CBBAAD7466 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525FBC289C4771BF39A0CD7331BC4C1B /* PBXTargetDependency */,
+				D1A05E9BC1BCB14B280E57A7C7C2639C /* PBXTargetDependency */,
+				B7AE9E56A99E742324985EA0B66BC1DA /* PBXTargetDependency */,
 			);
 			name = "Pods-StorePromo";
 			productName = "Pods-StorePromo";
-			productReference = 4469703C4DFB2AE579232DA716BD8A33 /* Pods_StorePromo.framework */;
+			productReference = 2B855CC2B8F6A9C1DDC712B75A6BEA84 /* Pods_StorePromo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -546,16 +692,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C40A6B3FDCC81B7D8BA40DBF516D4629 /* Products */;
+			productRefGroup = 5F73EABFB574CBE5F00EFC39B4C5FA6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */,
+				ECB6D90C6766CFCA9E67587BC56D6FA5 /* CFAlertViewController */,
 				4EB55D641C2BF865737A72BD89A4C973 /* LMGeocoder */,
-				C96F67D033B8F888FD133C8234349B95 /* Pods-StorePromo */,
+				FD618566FBA5BF94888D7C3E6DCAC6C3 /* Pods-StorePromo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D6FE9E26C116878739221D12E6B831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D19EB04F8B7E62CC3BA4E8EB6C903A7 /* CFAlertActionTableViewCell.xib in Resources */,
+				F5DFD8C756FC09D161C5F98A794FCAE6 /* CFAlertTitleSubtitleTableViewCell.xib in Resources */,
+				DBDA716F0497CEA0ADCBB239C7AA4C10 /* CFAlertViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		276BDF0FAC9C34568EF1BC28A36589BA /* Sources */ = {
@@ -568,11 +728,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		892A1331C450B9B50E2790E75EB6392D /* Sources */ = {
+		447B59C6AC7112CDF87C464B24793575 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E289A1F02756072D5517004DF7CB122A /* Pods-StorePromo-dummy.m in Sources */,
+				83F3BB834C245CC0EE27A28F5636A5DB /* Pods-StorePromo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5623CFD72E48B37CD900E80BA3E6AA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0C9567240B1D40D0881E19C2B20DE44 /* CFAlertAction.m in Sources */,
+				A8F646D53A1BBD69A8ACA75207860CEA /* CFAlertActionTableViewCell.m in Sources */,
+				326031CFE63547375AD71A9958C230D8 /* CFAlertTitleSubtitleTableViewCell.m in Sources */,
+				046C5BD9E7BC62AF3B2321E9475A2B7F /* CFAlertViewController-dummy.m in Sources */,
+				FB11D053A6686A4FB3B83FAA2B82D562 /* CFAlertViewController.m in Sources */,
+				7917E37FF381CEF286EBE52BBB891701 /* CFAlertViewControllerActionSheetTransition.m in Sources */,
+				8EA8C6CB0C339143F286D6FDC0A95BFA /* CFAlertViewControllerPopupTransition.m in Sources */,
+				F94C2AF8D468B0C241220FB21E3646AA /* CFPushButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,17 +763,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09CD3A8C2A156A040161940B54C8F423 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LMGeocoder;
-			target = 4EB55D641C2BF865737A72BD89A4C973 /* LMGeocoder */;
-			targetProxy = E9DA9342AE1D0F680558E3C76CE68F75 /* PBXContainerItemProxy */;
-		};
-		7194554094526C44168988BD7A80C72D /* PBXTargetDependency */ = {
+		525FBC289C4771BF39A0CD7331BC4C1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ARSLineProgress;
 			target = BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */;
-			targetProxy = 6F4AAC4B4A3F6E624B7ECCFBD7D5CE8E /* PBXContainerItemProxy */;
+			targetProxy = 3DBCF6D0545FF83ED192F8C1A791A83B /* PBXContainerItemProxy */;
+		};
+		B7AE9E56A99E742324985EA0B66BC1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LMGeocoder;
+			target = 4EB55D641C2BF865737A72BD89A4C973 /* LMGeocoder */;
+			targetProxy = 52A45E3CE8F16AABB3AD374366B4969F /* PBXContainerItemProxy */;
+		};
+		D1A05E9BC1BCB14B280E57A7C7C2639C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CFAlertViewController;
+			target = ECB6D90C6766CFCA9E67587BC56D6FA5 /* CFAlertViewController */;
+			targetProxy = 7F99EAA579B464E83C01188562597C99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -645,36 +826,7 @@
 			};
 			name = Debug;
 		};
-		50DAF24974623E8A75F6A56147A4092C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D9BB14DAB95C0E81AEA7B37DB56D331 /* LMGeocoder.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoder/LMGeocoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMGeocoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LMGeocoder/LMGeocoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LMGeocoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6CBFE94C684E0BC3FC3C388630CA18B5 /* Release */ = {
+		47DCDB2D4890DC6096562B497476C92F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 199919D26B934DC56F5A4C5A1E1F55AF /* Pods-StorePromo.release.xcconfig */;
 			buildSettings = {
@@ -707,9 +859,101 @@
 			};
 			name = Release;
 		};
+		50DAF24974623E8A75F6A56147A4092C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57EB31DA6CB3AB0970CBC79A64E26BF /* LMGeocoder.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoder/LMGeocoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMGeocoder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LMGeocoder/LMGeocoder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LMGeocoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66CD40CCF50655565300188F371163E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABBB5B2747422F35E31ABD3E6D683D1 /* Pods-StorePromo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-StorePromo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StorePromo/Pods-StorePromo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StorePromo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5B275E039353B25E5CCC5E1500BD855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2703927D006C0F005EEF88E513F15558 /* CFAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CFAlertViewController/CFAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CFAlertViewController/CFAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CFAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B022175B3376B1E721EC230026F65B0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2218AA6A34E444F9407ADCD5C008117B /* ARSLineProgress.xcconfig */;
+			baseConfigurationReference = DEAB5F9B8614781EFCEDA7927B6C3AF3 /* ARSLineProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -776,7 +1020,7 @@
 		};
 		DC78A27AAB78C9FFF18A069D77B79317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D9BB14DAB95C0E81AEA7B37DB56D331 /* LMGeocoder.xcconfig */;
+			baseConfigurationReference = B57EB31DA6CB3AB0970CBC79A64E26BF /* LMGeocoder.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -805,7 +1049,7 @@
 		};
 		E91CB1E2012E90E202FE8314FBF51777 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2218AA6A34E444F9407ADCD5C008117B /* ARSLineProgress.xcconfig */;
+			baseConfigurationReference = DEAB5F9B8614781EFCEDA7927B6C3AF3 /* ARSLineProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -833,9 +1077,9 @@
 			};
 			name = Debug;
 		};
-		EDD45B31B735DF7C253A4E3827C1845D /* Debug */ = {
+		FC1C237D91ACC1E6149D7995B437E676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ABBB5B2747422F35E31ABD3E6D683D1 /* Pods-StorePromo.debug.xcconfig */;
+			baseConfigurationReference = 2703927D006C0F005EEF88E513F15558 /* CFAlertViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -846,21 +1090,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-StorePromo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CFAlertViewController/CFAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFAlertViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StorePromo/Pods-StorePromo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CFAlertViewController/CFAlertViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_StorePromo;
+				PRODUCT_NAME = CFAlertViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -870,15 +1109,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09DE5B0AB68E73D0B5D4E2F5AD1990DC /* Build configuration list for PBXNativeTarget "Pods-StorePromo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDD45B31B735DF7C253A4E3827C1845D /* Debug */,
-				6CBFE94C684E0BC3FC3C388630CA18B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -893,6 +1123,24 @@
 			buildConfigurations = (
 				E91CB1E2012E90E202FE8314FBF51777 /* Debug */,
 				B022175B3376B1E721EC230026F65B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB22638045F4D49A89C405E3D2B15E94 /* Build configuration list for PBXNativeTarget "Pods-StorePromo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CD40CCF50655565300188F371163E5 /* Debug */,
+				47DCDB2D4890DC6096562B497476C92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6A56E2B56564207D5F1F0243A46EA2 /* Build configuration list for PBXNativeTarget "CFAlertViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1C237D91ACC1E6149D7995B437E676 /* Debug */,
+				A5B275E039353B25E5CCC5E1500BD855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

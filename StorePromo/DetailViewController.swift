@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseStorage
+import ARSLineProgress
+import CFAlertViewController
 
 class DetailViewController: UIViewController {
     @IBOutlet var webView: UIWebView!
@@ -37,36 +39,25 @@ class DetailViewController: UIViewController {
             fileIsNew in
             print("file is new? \(fileIsNew)")
             if fileIsNew {
+                let cfAlertViewController = CFAlertViewController.alertControllerWithTitle("Есть новый файл!", message: "Загрузим его?", textAlignment: .Center, preferredStyle: .Alert, didDismissAlertHandler: nil)
+                let yesCFAction = CFAlertAction.init(title: "Да!", style: .Default, alignment: .Justified, color: nil, handler: { action in
+                    self.beginDownloadingFromReference(fileRef, toURL: destinationUrl)
+                })
+                let noCFAction = CFAlertAction.init(title: "Нет :(", style: .Destructive, alignment: .Justified, color: nil, handler: nil)
+                cfAlertViewController.addAction(yesCFAction!)
+                if (NSUserDefaults.standardUserDefaults().boolForKey("hasFileForShop\(self.shop.image)")) {
+                    cfAlertViewController.addAction(noCFAction!)
+                }
+                cfAlertViewController.shouldDismissOnBackgroundTap = false
+                self.presentViewController(cfAlertViewController, animated: true, completion: nil)
                 //new file and we should download and display it after finishing downloading
-           let downloadTask = fileRef.writeToFile(destinationUrl, completion: {
-                    (URL, error) -> Void in
-                    if (error != nil) {
-                        print("error while downloading file: \(error)")
-                    } else {
-                        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasFileForShop\(self.shop.image)")
-                        self.displayFileFromURL(destinationUrl)
-                    }
-                })
-                downloadTask.observeStatus(.Progress, handler: { (snapshot) -> Void in
-                    let percentComplete = 100 * (snapshot.progress?.completedUnitCount)! / (snapshot.progress?.totalUnitCount)!
-                    print("percentComplete: \(percentComplete)")
-                    ARSLineProgress.showWithProgressObject(snapshot.progress!, completionBlock: {
-                        print("COMPLETED")
-                    })
-                    
-                })
+         
             } else {
                 //display old file
-                print("found file in storage - showing it!")
                 if (NSUserDefaults.standardUserDefaults().boolForKey("hasFileForShop\(self.shop.image)")) {
-                self.displayFileFromURL(destinationUrl)
+                    self.displayFileFromURL(destinationUrl)
                 } else {
-                    let alertViewController = UIAlertController.init(title: "NO INTERNET", message: "please conncect", preferredStyle: .Alert)
-                    let action = UIAlertAction.init(title: "ok", style: .Default, handler: { action in
-                        self.navigationController?.popToRootViewControllerAnimated(true)
-                    })
-                    alertViewController.addAction(action)
-                    self.presentViewController(alertViewController, animated: true, completion: nil)
+                    self.showNoInternetAlert()
                 }
             }
         }
@@ -79,7 +70,7 @@ class DetailViewController: UIViewController {
     
     private func isNewFileAtReference(fileRef: FIRStorageReference, oldFileDate: String?, completion:(Bool) -> Void) {
             fileRef.metadataWithCompletion({ (metadata, error) -> Void in
-                var boolToReturn = false
+                var fileIsNew = false
                 if (error != nil) {
                     print("An error occured: \(error)")
                 } else {
@@ -88,18 +79,46 @@ class DetailViewController: UIViewController {
                         if (oldDate != String(metadata!.timeCreated!)) {
                         print("should download file")
                         NSUserDefaults.standardUserDefaults().setObject(String(metadata!.timeCreated!), forKey: "\(self.shop.image)/lastDate")
-                        boolToReturn = true
+                        fileIsNew = true
                         }
                     } else {
                         NSUserDefaults.standardUserDefaults().setObject(String(metadata!.timeCreated!), forKey: "\(self.shop.image)/lastDate")
-                        boolToReturn = true
+                        fileIsNew = true
                     }
                 }
-                completion(boolToReturn)
+                completion(fileIsNew)
             })
     }
     
     private func displayFileFromURL(url: NSURL) {
         webView.loadData(NSData(contentsOfURL: url)!, MIMEType: "application/pdf", textEncodingName: "", baseURL: url.URLByDeletingLastPathComponent!)
+    }
+    
+    private func showNoInternetAlert () {
+        let alertViewController = CFAlertViewController.alertControllerWithTitle("Отсутствует подключение к интернету", message: "Проверьте Ваше соединение и попробуйте снова", textAlignment: .Center, preferredStyle: .Alert, didDismissAlertHandler: nil)
+        let action = CFAlertAction.init(title: "Хорошо!", style: .Default, alignment: .Justified, color: nil, handler: { action in
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        })
+        alertViewController.addAction(action!)
+        alertViewController.shouldDismissOnBackgroundTap = false
+        self.presentViewController(alertViewController, animated: true, completion: nil)
+    }
+    
+    private func beginDownloadingFromReference(fileRef: FIRStorageReference, toURL: NSURL) {
+        let downloadTask = fileRef.writeToFile(toURL, completion: {
+            (URL, error) -> Void in
+            if (error != nil) {
+                print("error while downloading file: \(error)")
+            } else {
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasFileForShop\(self.shop.image)")
+                self.displayFileFromURL(toURL)
+            }
+        })
+        downloadTask.observeStatus(.Progress, handler: { (snapshot) -> Void in
+            self.parentViewController!.view.userInteractionEnabled = false
+            ARSLineProgress.showWithProgressObject(snapshot.progress!, completionBlock: {
+                self.parentViewController!.view.userInteractionEnabled = true
+            })
+        })
     }
 }
